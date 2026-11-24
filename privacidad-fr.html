@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Politique de confidentialité de Delantrás</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Politique de confidentialité de Delantrás</h1>
+<p>Dernière mise à jour : 24 novembre 2026</p>
+<p>Delantrás est une application de JR Soft (ci-après « nous ») pour prendre des photos et des vidéos avec votre téléphone : avec la caméra avant et la caméra arrière en même temps (ou l'une après l'autre), avec des commandes manuelles et comme appareil photo pour selfies, avec des filtres et de la retouche.</p>
+<h2>1. Résumé</h2>
+<ul>
+<li><strong>Vos photos et vidéos restent sur votre téléphone.</strong> Il n'y a ni compte ni inscription, et nous n'avons aucun serveur qui reçoive vos photos, vos vidéos ou quoi que ce soit de ce que vous faites dans l'application.</li>
+<li><strong>Votre visage ne quitte pas le téléphone.</strong> La retouche, le déclenchement au sourire et le flou de l'arrière-plan analysent l'image sur le téléphone lui-même, sans enregistrer les données de votre visage et sans identifier personne (section 4).</li>
+<li>Ces trois fonctions utilisent des <strong>bibliothèques Google</strong> qui envoient des statistiques techniques à Google. C'est pourquoi elles ne s'activent que si vous l'acceptez, et vous pouvez changer d'avis à tout moment (section 4).</li>
+<li>L'application affiche des <strong>annonces Google AdMob</strong>, uniquement dans « Vos photos ». Pour cela, le SDK de Google collecte de son côté certaines données de l'appareil (section 6).</li>
+<li>L'application <strong>n'a pas d'autorisation de localisation</strong> et n'enregistre pas l'endroit où vous prenez vos photos. Seul le SDK publicitaire déduit une position approximative à partir de l'adresse IP (section 6).</li>
+<li>Nous n'utilisons aucun outil d'analyse <strong>qui nous soit propre</strong>.</li>
+<li>Nous ne recevons que ce que vous nous écrivez par e-mail.</li>
+</ul>
+<h2>2. Quelles données l'application traite et où</h2>
+<div class="tabla"><table>
+<thead><tr><th>Donnée</th><th>Où elle est stockée</th><th>Pour quoi faire</th></tr></thead>
+<tbody>
+<tr><td>Photos et vidéos que vous prenez</td><td>Uniquement sur votre téléphone, dans la galerie (dossier <code>DCIM/Delantras</code>)</td><td>Faire fonctionner l'application : prendre, enregistrer et vous montrer vos photos et vidéos</td></tr>
+<tr><td>Les deux photos ou vidéos d'origine de chaque photo ou vidéo double</td><td>Uniquement sur votre téléphone, dans le dossier privé de l'application (et, si vous activez « Originaux du double dans la galerie », aussi dans <code>DCIM/Delantras/Originales</code>)</td><td>Pouvoir recomposer plus tard la photo ou la vidéo double dans « Vos photos ». Vous pouvez les supprimer dans <em>Paramètres → Confidentialité</em></td></tr>
+<tr><td>Son des vidéos</td><td>Dans la vidéo elle-même, sur votre téléphone</td><td>Enregistrer des vidéos avec le son</td></tr>
+<tr><td>Image de la caméra pendant que vous utilisez la retouche, le sourire ou le flou de l'arrière-plan</td><td>Analysée dans la mémoire du téléphone, image par image, et non enregistrée</td><td>Appliquer la retouche, cadrer, déclencher quand vous souriez et vous détacher de l'arrière-plan (section 4)</td></tr>
+<tr><td>Texte du prompteur</td><td>Uniquement sur votre téléphone</td><td>Vous l'afficher pendant que vous filmez</td></tr>
+<tr><td>Paramètres (flash, filtres, mode pro, retouche, vos choix de confidentialité…)</td><td>Uniquement sur votre téléphone</td><td>Mémoriser vos préférences</td></tr>
+<tr><td>Pays de la carte SIM ou, à défaut, celui des langues du système</td><td>Lu sur le téléphone, sans autorisation particulière, et ne le quitte pas</td><td>N'afficher dans « Plus d'applis de JR Soft » que les applications disponibles dans votre pays</td></tr>
+<tr><td>Votre adresse e-mail et ce que vous nous écrivez, si vous nous envoyez un message</td><td>Dans notre messagerie</td><td>Vous répondre</td></tr>
+</tbody></table></div>
+<p><strong>Partage.</strong> Lorsque vous partagez une photo ou une vidéo, c'est vous qui l'envoyez à l'application que vous choisissez dans le menu d'Android. Avec « Partager sans la position » (activé par défaut), les photos partent sous forme de copie sans la position, sans la marque et le modèle du téléphone et sans autres données cachées, et les vidéos, sans la position (sous Android 12 ou version ultérieure). La photo d'origine de votre galerie n'est pas modifiée.</p>
+<p><strong>Votre galerie.</strong> Les photos et vidéos sont enregistrées dans la galerie normale du téléphone. Si vous avez activé une copie de votre galerie dans le cloud (par exemple, Google Photos ou celle du fabricant), ce service les copiera aussi, selon ses propres conditions. Cela ne dépend pas de Delantrás.</p>
+<h2>3. Autorisations</h2>
+<ul>
+<li><strong>Appareil photo :</strong> pour prendre des photos et des vidéos. Elle est demandée à l'ouverture du viseur.</li>
+<li><strong>Micro :</strong> uniquement pour le son des vidéos. Elle est demandée la première fois que vous filmez. Si vous ne l'accordez pas, les vidéos sont enregistrées sans son. L'application n'écoute ni n'enregistre aucun son à aucun autre moment.</li>
+<li><strong>Stockage :</strong> uniquement sous Android 8 et 9, pour enregistrer dans la galerie. À partir d'Android 10, elle n'est pas nécessaire.</li>
+<li><strong>Identifiant publicitaire :</strong> il est utilisé par le SDK publicitaire (section 6).</li>
+</ul>
+<p>L'application <strong>ne demande pas</strong> d'autorisation de localisation, d'accès aux contacts ni de lecture de vos photos : « Vos photos » n'affiche que ce que vous avez fait avec Delantrás.</p>
+<h2>4. Appareil photo pour selfies : retouche, sourire et flou de l'arrière-plan</h2>
+<p><strong>Tout est traité sur le téléphone.</strong> La retouche (peau, lumière et ombres sous les yeux), le déclenchement au sourire et le flou de l'arrière-plan analysent l'image de la caméra <strong>uniquement sur votre téléphone</strong>, image par image et en mémoire.</p>
+<p><strong>Points du visage et silhouette.</strong> Pour placer la retouche et cadrer, l'application repère quelques points du visage (le contour, les yeux et la bouche). Pour le flou, elle calcule la silhouette de la personne.</p>
+<ul>
+<li><strong>Ils ne sont pas enregistrés</strong> : ils sont supprimés à chaque image.</li>
+<li><strong>Ils ne servent pas à identifier qui que ce soit</strong> et ne sont pas comparés à d'autres visages.</li>
+<li><strong>Aucune déduction</strong> n'est faite sur le sexe, l'âge, l'origine ou les émotions de qui que ce soit.</li>
+<li>Le sourire n'est détecté que pour prendre la photo.</li>
+</ul>
+<p><strong>Rien n'est envoyé.</strong> Ni vos photos, ni vos vidéos, ni l'image de la caméra, ni les points de votre visage, ni votre silhouette ne sont envoyés à JR Soft ni à qui que ce soit.</p>
+<p><strong>Bibliothèques Google.</strong> Ces fonctions utilisent deux bibliothèques de Google LLC qui arrivent sur votre téléphone avec les services Google Play :</p>
+<ul>
+<li><strong>ML Kit</strong> (détection des visages). Si son modèle n'est pas encore sur votre téléphone, les services Google Play le téléchargent la première fois que vous utilisez la retouche ou le sourire, après « Activer ».</li>
+<li><strong>LiteRT</strong> (le moteur qui exécute le modèle de silhouette, <code>selfie_segmenter</code>, intégré à l'application). S'il n'est pas encore sur votre téléphone, les services Google Play téléchargent LiteRT la première fois que vous utilisez le flou de l'arrière-plan.</li>
+</ul>
+<p>Les services Google Play font partie du système du téléphone et peuvent déjà disposer de ces composants ou les télécharger d'eux-mêmes, car d'autres applications et fonctions du téléphone les utilisent aussi. Ces téléchargements ne dépendent pas de Delantrás : l'application n'utilise aucune de ces bibliothèques tant que vous n'avez pas choisi « Activer ».</p>
+<p>Les images sont traitées sur le téléphone et <strong>ne sont pas envoyées à Google</strong>. Mais, lorsqu'elles sont utilisées, ces bibliothèques envoient à Google, de façon chiffrée :</p>
+<ul>
+<li>des données sur l'appareil (fabricant, modèle, version d'Android et accélérateurs disponibles) et sur l'application (nom du package et version) ;</li>
+<li>des identifiants de cette installation et de l'appareil ;</li>
+<li>des mesures de performances et d'utilisation, la configuration (par exemple, le format et la résolution de l'image), la taille de l'entrée et de la sortie, le type d'événement et les codes d'erreur.</li>
+</ul>
+<p>Selon Google, ces données lui servent à mesurer, maintenir, corriger et améliorer ces bibliothèques, ainsi qu'à détecter les abus, et ML Kit ne les transmet pas à des tiers. LiteRT peut aussi se connecter à Google pour recevoir des correctifs, des modèles mis à jour et des données de compatibilité avec le matériel du téléphone.</p>
+<p>Plus d'informations :</p>
+<ul>
+<li>Données de ML Kit : <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>Conditions de ML Kit : <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>LiteRT dans les services Google Play : <a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Règles de confidentialité de Google : <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>Votre choix.</strong> La première fois que vous utilisez l'une de ces fonctions, l'application vous explique tout cela et vous pose la question. Avec « Activer », les bibliothèques sont chargées. Avec « Pas maintenant », elles ne sont pas chargées, ces trois fonctions restent désactivées et le reste de l'appareil photo fonctionne normalement. Vous pouvez modifier ce choix à tout moment dans <em>Paramètres → Confidentialité → Retouche, sourire et arrière-plan</em>.</p>
+<p><strong>Effets du fabricant.</strong> Certains téléphones proposent leurs propres effets photo (Nuit, HDR, Portrait ou Retouche du visage). Lorsque vous les choisissez, c'est le logiciel de l'appareil photo de votre téléphone qui les applique, sur le téléphone lui-même, et non les bibliothèques Google.</p>
+<h2>5. Base légale</h2>
+<ul>
+<li><strong>Exécution du service que vous demandez</strong> (art. 6.1.b du RGPD) : prendre et enregistrer vos photos et vidéos, enregistrer le son des vidéos, appliquer les filtres et la retouche et analyser l'image sur le téléphone pour les fonctions que vous choisissez, le tout sur votre téléphone.</li>
+<li><strong>Consentement</strong> (art. 6.1.a du RGPD et art. 22.2 de la Ley 34/2002, LSSI-CE, loi espagnole sur les services de la société de l'information) :<ul>
+<li>pour les statistiques techniques que les bibliothèques Google envoient lorsque vous utilisez la retouche, le sourire ou le flou de l'arrière-plan (section 4) ;</li>
+<li>pour que le SDK publicitaire enregistre ou lise des informations sur votre téléphone et pour vous montrer de la <strong>publicité personnalisée</strong>. Ce consentement est demandé au moyen du formulaire de Google dans l'Espace économique européen, au Royaume-Uni et en Suisse. Si vous ne le donnez pas, Google peut vous montrer des annonces limitées, non personnalisées. Pour les mesurer et prévenir la fraude, Google et ses partenaires s'appuient sur leur intérêt légitime, auquel vous pouvez vous opposer dans ce même formulaire.</li>
+</ul></li>
+<li><strong>Intérêt légitime</strong> (art. 6.1.f du RGPD) : répondre aux e-mails que vous nous envoyez.</li>
+</ul>
+<h2>6. Annonces (Google AdMob) et SDK tiers</h2>
+<p><strong>Annonces.</strong> L'application n'affiche des annonces que dans « Vos photos », jamais dans le viseur de l'appareil photo. Elle utilise le <strong>SDK Google Mobile Ads (AdMob)</strong> et la <strong>plate-forme de messagerie utilisateur de Google (UMP)</strong> pour afficher des annonces et vous demander votre consentement la première fois que vous ouvrez « Vos photos ». Ces SDK collectent de leur côté les données suivantes, qu'ils partagent avec Google, afin d'afficher et de mesurer les annonces, de réaliser des analyses et de prévenir la fraude :</p>
+<ul>
+<li>l'<strong>adresse IP</strong>, dont on déduit une <strong>position approximative</strong> ;</li>
+<li>des <strong>identifiants de l'appareil</strong> : l'identifiant publicitaire et l'app set ID ;</li>
+<li>vos <strong>interactions avec l'application et avec les annonces</strong> (par exemple, ouvertures et appuis) ;</li>
+<li>des <strong>diagnostics</strong> (performances de l'application et du SDK).</li>
+</ul>
+<p>L'application n'ajoute aux demandes d'annonces rien qui provienne de vos photos, de vos vidéos ou de votre visage.</p>
+<p>Pour afficher et mesurer les annonces, le SDK publicitaire de Google (AdMob) collecte des identifiants de l'appareil, comme l'explique cette politique. Certaines lois américaines sur la protection de la vie privée peuvent considérer cela comme une « vente » ou un « partage » de données personnelles (voir la section 13, « Résidents des États-Unis »).</p>
+<p>Plus d'informations : <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Géolocalisation précise.</strong> Le message de consentement aux annonces est affiché par Google avec un texte commun à tous ses partenaires publicitaires, c'est pourquoi il mentionne la géolocalisation précise. Cette application n'a pas d'autorisation de localisation et ne transmet pas la position GPS au SDK. Selon Google, son SDK publicitaire n'utilise que la position approximative déduite de l'adresse IP. Vous pouvez refuser cette utilisation dans « Gérer les options ».</p>
+<p><strong>Firebase Remote Config.</strong> L'application l'intègre, désactivé : il n'envoie rien tant qu'il n'est pas activé. S'il est activé un jour, cette politique le précisera.</p>
+<p><strong>Google Play.</strong> « Notez l'appli » et la demande d'évaluation dans l'application utilisent la fonction d'évaluation de Google Play. C'est Google Play qui reçoit votre évaluation, selon ses propres conditions, et non nous.</p>
+<h2>7. Transferts internationaux</h2>
+<p>Google LLC peut traiter aux États-Unis les données collectées par ses SDK et ses bibliothèques. Google LLC adhère au <strong>cadre de protection des données UE-États-Unis</strong> (Data Privacy Framework), à son <strong>extension au Royaume-Uni</strong> et au <strong>cadre Suisse-États-Unis</strong>, et utilise en outre des clauses contractuelles types.</p>
+<p>Notre messagerie est fournie par Google (Gmail), avec les mêmes garanties.</p>
+<h2>8. Comment retirer votre consentement et contrôler vos données</h2>
+<ul>
+<li><strong>Retouche, sourire et flou de l'arrière-plan</strong> : dans <em>Paramètres → Confidentialité → Retouche, sourire et arrière-plan</em>. Si vous désactivez cette option, les bibliothèques Google ne sont plus utilisées et ces fonctions se désactivent. Ce qui aurait déjà été envoyé est traité par Google conformément à sa politique.</li>
+<li><strong>Annonces</strong> : dans l'application, <em>Paramètres → Confidentialité → Options de confidentialité des annonces</em> (cette option apparaît là où la loi l'exige : EEE, Royaume-Uni, Suisse et certains États américains). Vous pouvez y retirer votre consentement ou vous opposer à l'intérêt légitime, aussi facilement que vous l'avez donné. Vous pouvez aussi réinitialiser ou supprimer l'identifiant publicitaire dans les paramètres Google de votre téléphone.</li>
+<li><strong>Micro et appareil photo</strong> : vous pouvez retirer l'autorisation à l'application dans les paramètres d'Android.</li>
+<li><strong>Vos photos et vidéos</strong> : supprimez-les depuis « Vos photos » ou depuis la galerie. Les originaux des doubles se suppriment dans <em>Paramètres → Confidentialité</em> ou en désinstallant l'application. Les photos et vidéos de la galerie ne sont pas supprimées lorsque vous désinstallez l'application.</li>
+</ul>
+<h2>9. Sauvegardes et changement de téléphone</h2>
+<p>La sauvegarde Android dans le cloud (celle de votre compte Google) est désactivée pour les données de cette application : aucune n'est envoyée. Android enregistre bien dans votre compte la liste des applications que vous aviez installées, pour pouvoir les réinstaller, mais cette liste est gérée par Google et ne contient aucune donnée de l'application. Vos photos et vidéos se trouvent dans la galerie du téléphone, pas dans l'application (section 2).</p>
+<p>Si, lors de la configuration d'un nouveau téléphone, vous copiez vos données directement depuis l'ancien, avec ou sans câble, vos paramètres de l'application peuvent passer sur le nouveau téléphone. C'est vous qui demandez ce transfert et c'est Android qui l'effectue, avec son outil ou celui du fabricant du téléphone, selon leurs propres conditions. Selon la documentation d'Android, il passe d'un téléphone à l'autre sans transiter par des serveurs. Il ne passe en aucun cas par les nôtres : JR Soft ne reçoit aucune donnée.</p>
+<p>Que ce transfert ait lieu ou non dépend de la version d'Android et du fabricant (il n'a pas lieu sous Android 8 ou version antérieure) ; nous ne pouvons donc pas le garantir. Si vous configurez le nouveau téléphone à partir de la sauvegarde de votre compte Google, sans l'ancien, les données de cette application ne reviennent pas, car elles ne figurent pas dans cette sauvegarde.</p>
+<p>Ce qui ne sert que sur l'ancien téléphone n'est pas transféré : les originaux des doubles, les identifiants des SDK et vos choix concernant les annonces et les bibliothèques Google de la section 4. Sur le nouveau téléphone, l'application vous reposera la question.</p>
+<h2>10. Mineurs</h2>
+<p>L'application ne s'adresse pas aux mineurs de moins de 16 ans. Les annonces personnalisées et les statistiques des bibliothèques Google requièrent un consentement que les mineurs de moins de cet âge ne peuvent pas donner seuls dans l'UE (art. 8 du RGPD ; 14 ans en Espagne, art. 7 de la LOPDGDD, loi espagnole sur la protection des données).</p>
+<h2>11. Conservation</h2>
+<ul>
+<li>Vos photos, vidéos et paramètres sont conservés sur votre téléphone tant que vous ne les supprimez pas ou que vous ne désinstallez pas l'application (les photos et vidéos de la galerie y restent même si vous la désinstallez).</li>
+<li>L'image de la caméra, les points du visage et la silhouette ne sont pas conservés : ils sont supprimés à chaque image.</li>
+<li>Les e-mails que vous nous envoyez, le temps nécessaire pour vous répondre et, au maximum, un an après la dernière réponse.</li>
+<li>Les données collectées par les SDK et les bibliothèques Google sont conservées conformément à la politique de Google.</li>
+</ul>
+<h2>12. Vos droits</h2>
+<p>Vous pouvez exercer vos droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité en nous écrivant. Vous pouvez aussi retirer à tout moment les consentements que vous avez donnés, comme expliqué à la section 8 ; leur retrait n'affecte pas les traitements effectués auparavant. Comme nous ne recevons ni vos photos ni vos vidéos, vous exercez la plupart d'entre eux directement sur votre téléphone (voir, supprimer ou partager ce que vous avez fait). Pour les données collectées par ses SDK et ses bibliothèques, Google traite vos demandes sur <a href="https://myaccount.google.com">https://myaccount.google.com</a> et <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+<p>Si vous estimez que nous n'avons pas traité correctement vos données, vous pouvez introduire une réclamation auprès de l'Agencia Española de Protección de Datos (l'autorité espagnole de protection des données, www.aepd.es) ou auprès de l'autorité de protection des données du pays où vous vivez, où vous travaillez ou où le problème s'est produit.</p>
+<h2>13. Résidents des États-Unis</h2>
+<p>Si vous vivez dans un État américain doté de sa propre loi sur la protection de la vie privée (par exemple, la Californie, le Colorado, le Connecticut, le Texas ou la Virginie), vous avez le droit de demander que vos données personnelles ne soient ni vendues ni partagées à des fins de publicité ciblée. Vous pouvez le faire dans l'application : <em>Paramètres → Confidentialité → Options de confidentialité des annonces</em> → « Don't sell or share my data ». Dès lors, vous ne verrez plus que des annonces non personnalisées. L'application n'envoie de données sensibles à personne : vos photos, vos vidéos et les données de votre visage restent sur votre téléphone. Pour les annonces, le SDK de Google utilise des identifiants de l'appareil et une position approximative (à l'échelle de la ville). Pour toute autre demande concernant vos données, écrivez-nous à <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<h2>14. Modifications</h2>
+<p>Si cette politique change, nous l'indiquerons dans les notes de version de l'application sur Google Play et nous modifierons la date ci-dessus. Si une nouvelle fonction a besoin de données qui ne sont pas utilisées aujourd'hui (par exemple, enregistrer la position dans les photos), nous vous l'expliquerons dans l'application avant de l'activer et nous l'ajouterons ici.</p>
+<h2>15. Responsable du traitement et contact</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

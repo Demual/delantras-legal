@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Delantrás gizlilik politikası</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Delantrás gizlilik politikası</h1>
+<p>Son güncelleme: 24 Kasım 2026</p>
+<p>Delantrás, JR Soft'un (bundan sonra “biz”) telefonla fotoğraf çekmek ve video kaydetmek için sunduğu bir uygulamadır: ön ve arka kamerayla aynı anda (veya art arda), manuel kontrollerle ve filtreleri ve rötuşu olan bir selfie kamerası olarak.</p>
+<h2>1. Özet</h2>
+<ul>
+<li><strong>Fotoğraflarınız ve videolarınız telefonunuzda kalır.</strong> Hesap veya kayıt yoktur ve fotoğraflarınızı, videolarınızı ya da uygulamada yaptığınız herhangi bir şeyi alan hiçbir sunucumuz yoktur.</li>
+<li><strong>Yüzünüz telefondan çıkmaz.</strong> Rötuş, gülümsemeyle çekim ve arka plan bulanıklaştırma, görüntüyü telefonun kendisinde analiz eder; yüzünüzün verilerini kaydetmez ve kimsenin kimliğini belirlemez (bölüm 4).</li>
+<li>Bu üç özellik, Google'a teknik istatistikler gönderen <strong>Google kitaplıklarını</strong> kullanır. Bu yüzden yalnızca siz kabul ederseniz etkinleşir ve bunu istediğiniz zaman değiştirebilirsiniz (bölüm 4).</li>
+<li>Uygulama, yalnızca “Fotoğrafların” bölümünde <strong>Google AdMob reklamları</strong> gösterir. Bunun için Google'ın SDK'sı bazı cihaz verilerini kendi başına toplar (bölüm 6).</li>
+<li>Uygulamanın <strong>konum izni yoktur</strong> ve fotoğrafları nerede çektiğinizi kaydetmez. Yalnızca reklam SDK'sı IP adresinden yaklaşık bir konum çıkarır (bölüm 6).</li>
+<li><strong>Kendimize ait</strong> hiçbir analiz aracı kullanmayız.</li>
+<li>Yalnızca bize e-postayla yazdıklarınızı alırız.</li>
+</ul>
+<h2>2. Uygulama hangi verileri nerede işler</h2>
+<div class="tabla"><table>
+<thead><tr><th>Veri</th><th>Nerede saklanır</th><th>Ne için</th></tr></thead>
+<tbody>
+<tr><td>Çektiğiniz fotoğraflar ve videolar</td><td>Yalnızca telefonunuzda, galeride (<code>DCIM/Delantras</code> klasörü)</td><td>Uygulamanın çalışması için: fotoğraflarınızı ve videolarınızı çekmek, kaydetmek ve size göstermek</td></tr>
+<tr><td>Her çift fotoğrafın veya videonun iki orijinal fotoğrafı ya da videosu</td><td>Yalnızca telefonunuzda, uygulamanın özel klasöründe (ve “Çift orijinalleri galeride” seçeneğini açarsanız <code>DCIM/Delantras/Originales</code> klasöründe de)</td><td>Çift çekimi daha sonra “Fotoğrafların” bölümünde yeniden düzenleyebilmek. Bunları <em>Ayarlar → Gizlilik</em> bölümünden silebilirsiniz</td></tr>
+<tr><td>Videoların sesi</td><td>Videonun kendi içinde, telefonunuzda</td><td>Sesli video kaydetmek</td></tr>
+<tr><td>Rötuş, gülümseme veya arka plan bulanıklaştırmayı kullanırken kamera görüntüsü</td><td>Telefonun belleğinde kare kare analiz edilir ve kaydedilmez</td><td>Rötuşu uygulamak, kadrajlamak, gülümsediğinizde çekmek ve sizi arka plandan ayırmak (bölüm 4)</td></tr>
+<tr><td>Telepromptır metni</td><td>Yalnızca telefonunuzda</td><td>Kayıt sırasında size göstermek</td></tr>
+<tr><td>Ayarlar (flaş, filtreler, Pro modu, rötuş, gizlilikle ilgili seçimleriniz…)</td><td>Yalnızca telefonunuzda</td><td>Tercihlerinizi hatırlamak</td></tr>
+<tr><td>SIM kartın ülkesi veya SIM kart yoksa sistem dillerinin ülkesi</td><td>Özel izin gerekmeden telefonda okunur ve telefondan çıkmaz</td><td>“JR Soft'un diğer uygulamaları” bölümünde yalnızca ülkenizde sunulan uygulamaları göstermek</td></tr>
+<tr><td>Bize mesaj gönderirseniz e-posta adresiniz ve yazdıklarınız</td><td>E-posta kutumuzda</td><td>Size yanıt vermek</td></tr>
+</tbody></table></div>
+<p><strong>Paylaşma.</strong> Bir fotoğrafı veya videoyu paylaştığınızda, onu Android menüsünden seçtiğiniz uygulamaya siz gönderirsiniz. “Konum olmadan paylaş” seçeneğiyle (varsayılan olarak açık) fotoğraflar konum, telefonun markası ve modeli ve diğer gizli veriler olmadan bir kopya olarak gider; videolar ise konum olmadan gider (Android 12 veya sonrasında). Galerinizdeki orijinal fotoğrafa dokunulmaz.</p>
+<p><strong>Galeriniz.</strong> Fotoğraflar ve videolar telefonun normal galerisine kaydedilir. Galerinizin buluta yedeklenmesini açtıysanız (örneğin Google Fotoğraflar veya üreticinin hizmeti), o hizmet de bunları kendi koşullarıyla kopyalar. Bu, Delantrás'a bağlı değildir.</p>
+<h2>3. İzinler</h2>
+<ul>
+<li><strong>Kamera:</strong> fotoğraf çekmek ve video kaydetmek için. Vizör açıldığında istenir.</li>
+<li><strong>Mikrofon:</strong> yalnızca videoların sesi için. İlk kez kayıt yaptığınızda istenir. Bu izni vermezseniz videolar sessiz kaydedilir. Uygulama başka hiçbir zaman ses dinlemez veya kaydetmez.</li>
+<li><strong>Depolama:</strong> yalnızca Android 8 ve 9'da, galeriye kaydetmek için. Android 10'dan itibaren gerekmez.</li>
+<li><strong>Reklam kimliği:</strong> reklam SDK'sı tarafından kullanılır (bölüm 6).</li>
+</ul>
+<p>Uygulama konum, kişiler veya fotoğraflarınızı okuma izni <strong>istemez</strong>: “Fotoğrafların” yalnızca Delantrás ile çektiklerinizi gösterir.</p>
+<h2>4. Selfie kamerası: rötuş, gülümseme ve arka plan bulanıklaştırma</h2>
+<p><strong>Her şey telefonda işlenir.</strong> Rötuş (cilt, ışık ve göz altı gölgeleri), gülümsediğinizde çekim ve arka plan bulanıklaştırma, kamera görüntüsünü <strong>yalnızca telefonunuzda</strong>, kare kare ve bellekte analiz eder.</p>
+<p><strong>Yüz noktaları ve siluet.</strong> Rötuşu yerleştirmek ve kadrajlamak için uygulama yüzün bazı noktalarını (dış hat, gözler ve ağız) bulur. Bulanıklaştırma için kişinin siluetini hesaplar.</p>
+<ul>
+<li><strong>Kaydedilmezler</strong>: her karede atılırlar.</li>
+<li><strong>Kimsenin kimliğini belirlemek için kullanılmazlar</strong> ve başka yüzlerle karşılaştırılmazlar.</li>
+<li>Kimsenin cinsiyeti, yaşı, kökeni veya duyguları hakkında <strong>çıkarım yapılmaz</strong>.</li>
+<li>Gülümseme yalnızca fotoğrafı çekmek için algılanır.</li>
+</ul>
+<p><strong>Hiçbir şey gönderilmez.</strong> Ne fotoğraflarınız, ne videolarınız, ne kamera görüntüsü, ne yüzünüzün noktaları ne de siluetiniz JR Soft'a veya başka birine gönderilir.</p>
+<p><strong>Google kitaplıkları.</strong> Bu özellikler, Google Play services ile telefonunuza gelen iki Google LLC kitaplığını kullanır:</p>
+<ul>
+<li><strong>ML Kit</strong> (yüz algılama). Modeli telefonunuzda henüz yoksa, “Aç” seçeneğinden sonra rötuşu veya gülümsemeyi ilk kez kullandığınızda Google Play services onu indirir.</li>
+<li><strong>LiteRT</strong> (uygulamanın içinde bulunan siluet modelini, <code>selfie_segmenter</code>'ı çalıştıran motor). LiteRT telefonunuzda henüz yoksa, arka plan bulanıklaştırmayı ilk kez kullandığınızda Google Play services LiteRT'yi indirir.</li>
+</ul>
+<p>Google Play services telefonun sisteminin bir parçasıdır; başka uygulamalar ve telefonun başka özellikleri de bu bileşenleri kullandığı için onlara zaten sahip olabilir veya onları kendi başına indirebilir. Bu indirmeler Delantrás'a bağlı değildir: uygulama, siz “Aç”ı seçene kadar bu kitaplıkların hiçbirini kullanmaz.</p>
+<p>Görüntüler telefonda işlenir ve <strong>Google'a gönderilmez</strong>. Ancak bu kitaplıklar, kullanıldıklarında Google'a şifreli olarak şunları gönderir:</p>
+<ul>
+<li>cihaz verileri (üretici, model, Android sürümü ve kullanılabilir hızlandırıcılar) ve uygulama verileri (paket adı ve sürüm);</li>
+<li>bu kurulumun ve cihazın kimlikleri;</li>
+<li>performans ve kullanım ölçümleri, yapılandırma (örneğin görüntünün biçimi ve çözünürlüğü), giriş ve çıkış boyutu, olay türü ve hata kodları.</li>
+</ul>
+<p>Google'a göre Google bunları bu kitaplıkları ölçmek, sürdürmek, düzeltmek ve geliştirmek ve kötüye kullanımı tespit etmek için kullanır; ML Kit de bunları üçüncü taraflara aktarmaz. LiteRT ayrıca düzeltmeler, güncellenmiş modeller ve telefonun donanımıyla uyumluluk verileri almak için Google'a bağlanabilir.</p>
+<p>Daha fazla bilgi:</p>
+<ul>
+<li>ML Kit verileri: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>ML Kit koşulları: <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>Google Play services'te LiteRT: <a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Google gizlilik politikası: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>Sizin seçiminiz.</strong> Bu özelliklerden birini ilk kez kullandığınızda uygulama size bunların hepsini açıklar ve sorar. “Aç” ile kitaplıklar yüklenir. “Şimdi değil” ile yüklenmez, bu üç özellik kapalı kalır ve kameranın geri kalanı aynı şekilde çalışır. Bunu istediğiniz zaman <em>Ayarlar → Gizlilik → Rötuş, gülümseme ve arka plan</em> bölümünden değiştirebilirsiniz.</p>
+<p><strong>Üretici efektleri.</strong> Bazı telefonlar kendi kamera efektlerini sunar (Gece, HDR, Portre veya Yüz rötuşu). Bunları seçtiğinizde, onları Google kitaplıkları değil, telefonunuzun kamera yazılımı telefonun kendisinde uygular.</p>
+<h2>5. Hukuki dayanak</h2>
+<ul>
+<li><strong>İstediğiniz hizmetin yerine getirilmesi</strong> (GDPR md. 6.1.b): fotoğraflarınızı ve videolarınızı çekmek ve kaydetmek, videoların sesini kaydetmek, filtreleri ve rötuşu uygulamak ve seçtiğiniz özellikler için görüntüyü telefonda analiz etmek; bunların hepsi telefonunuzda.</li>
+<li><strong>Onay</strong> (GDPR md. 6.1.a ile Ley 34/2002, LSSI-CE md. 22.2; İspanya'nın bilgi toplumu hizmetleri ve elektronik ticaret kanunu):<ul>
+<li>Google kitaplıklarının, rötuş, gülümseme veya arka plan bulanıklaştırmayı kullandığınızda gönderdiği teknik istatistikler için (bölüm 4);</li>
+<li>reklam SDK'sının telefonunuzda bilgi saklaması veya okuması ve size <strong>kişiselleştirilmiş reklamlar</strong> gösterilmesi için. Bu onay, Avrupa Ekonomik Alanı, Birleşik Krallık ve İsviçre'de Google'ın formuyla istenir. Onay vermezseniz Google size kişiselleştirilmemiş, sınırlı reklamlar gösterebilir. Bunları ölçmek ve dolandırıcılığı önlemek için Google ve ortakları meşru menfaatlerine dayanır; buna aynı formda itiraz edebilirsiniz.</li>
+</ul></li>
+<li><strong>Meşru menfaat</strong> (GDPR md. 6.1.f): bize gönderdiğiniz e-postalara yanıt vermek.</li>
+</ul>
+<h2>6. Reklamlar (Google AdMob) ve üçüncü taraf SDK'ları</h2>
+<p><strong>Reklamlar.</strong> Uygulama reklamları yalnızca “Fotoğrafların” bölümünde gösterir, kamera vizöründe asla göstermez. Reklam göstermek ve “Fotoğrafların” bölümüne ilk girdiğinizde onayınızı istemek için <strong>Google Mobile Ads SDK'sını (AdMob)</strong> ve <strong>Google Kullanıcı Mesajlaşma Platformu'nu (UMP)</strong> kullanır. Bu SDK'lar, reklamları göstermek ve ölçmek, analiz yapmak ve dolandırıcılığı önlemek için şunları kendi başlarına toplar ve Google ile paylaşır:</p>
+<ul>
+<li><strong>yaklaşık konumun</strong> çıkarıldığı <strong>IP adresi</strong>;</li>
+<li><strong>cihaz kimlikleri</strong>: reklam kimliği ve app set ID;</li>
+<li><strong>uygulamayla ve reklamlarla etkileşimleriniz</strong> (örneğin açılışlar ve dokunmalar);</li>
+<li><strong>tanılama verileri</strong> (uygulamanın ve SDK'nın performansı).</li>
+</ul>
+<p>Uygulama, reklam isteklerine fotoğraflarınızdan, videolarınızdan veya yüzünüzden hiçbir şey eklemez.</p>
+<p>Reklamları göstermek ve ölçmek için Google'ın reklam SDK'sı (AdMob), bu politikada açıklandığı gibi cihaz kimliklerini toplar. ABD'deki bazı gizlilik yasaları bunu kişisel verilerin “satılması” veya “paylaşılması” olarak değerlendirebilir (bkz. bölüm 13, “ABD'de yaşayanlar”).</p>
+<p>Daha fazla bilgi: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Kesin coğrafi konum.</strong> Reklam onayı mesajını Google, tüm reklam ortakları için ortak olan bir metinle gösterir; bu yüzden mesajda kesin coğrafi konumdan söz edilir. Bu uygulamanın konum izni yoktur ve GPS konumunu SDK'ya aktarmaz. Google'a göre reklam SDK'sı yalnızca IP adresinden çıkarılan yaklaşık konumu kullanır. Bu kullanımı “Seçenekleri yönet” bölümünden reddedebilirsiniz.</p>
+<p><strong>Firebase Remote Config.</strong> Uygulamada bulunur ama kapalıdır: etkinleştirilmediği sürece hiçbir şey göndermez. Bir gün etkinleştirilirse bu politika bunu belirtecektir.</p>
+<p><strong>Google Play.</strong> “Uygulamayı puanla” ve uygulama içindeki puanlama isteği, Google Play'in puanlama özelliğini kullanır. Puanınızı biz değil, kendi koşullarıyla Google Play alır.</p>
+<h2>7. Uluslararası veri aktarımları</h2>
+<p>Google LLC, SDK'larının ve kitaplıklarının topladığı verileri Amerika Birleşik Devletleri'nde işleyebilir. Google LLC, <strong>AB-ABD Veri Gizliliği Çerçevesi</strong>'ne (Data Privacy Framework), bu çerçevenin <strong>Birleşik Krallık uzantısına</strong> ve <strong>İsviçre-ABD Çerçevesi</strong>'ne katılmıştır; ayrıca standart sözleşme maddelerini de kullanır.</p>
+<p>E-posta hizmetimizi aynı güvencelerle Google (Gmail) sağlar.</p>
+<h2>8. Onayınızı geri çekme ve verilerinizi kontrol etme</h2>
+<ul>
+<li><strong>Rötuş, gülümseme ve arka plan bulanıklaştırma</strong>: <em>Ayarlar → Gizlilik → Rötuş, gülümseme ve arka plan</em> bölümünden. Kapatırsanız Google kitaplıkları artık kullanılmaz ve bu özellikler kapanır. Daha önce gönderilmiş olanları Google kendi politikasına göre işler.</li>
+<li><strong>Reklamlar</strong>: uygulamada <em>Ayarlar → Gizlilik → Reklam gizlilik seçenekleri</em> (yasanın gerektirdiği yerlerde görünür: AEA, Birleşik Krallık, İsviçre ve ABD'nin bazı eyaletleri). Orada onayınızı geri çekebilir veya meşru menfaate itiraz edebilirsiniz; bu, onayı vermek kadar kolaydır. Ayrıca reklam kimliğini telefonunuzun Google ayarlarından sıfırlayabilir veya silebilirsiniz.</li>
+<li><strong>Mikrofon ve kamera</strong>: uygulamanın iznini Android ayarlarından kaldırabilirsiniz.</li>
+<li><strong>Fotoğraflarınız ve videolarınız</strong>: bunları “Fotoğrafların” bölümünden veya galeriden silin. Çift çekim orijinalleri <em>Ayarlar → Gizlilik</em> bölümünden ya da uygulama kaldırıldığında silinir. Galerideki fotoğraflar ve videolar uygulama kaldırıldığında silinmez.</li>
+</ul>
+<h2>9. Yedekler ve telefon değiştirme</h2>
+<p>Android'in bulut yedeklemesi (Google hesabınızdaki yedek) bu uygulamanın verileri için kapalıdır: hiçbiri yüklenmez. Android, yüklü uygulamalarınızın listesini yeniden yükleyebilmek için hesabınızda saklar; ancak bu listeyi Google yönetir ve listede uygulamanın verileri bulunmaz. Fotoğraflarınız ve videolarınız uygulamanın içinde değil, telefonun galerisindedir (bölüm 2).</p>
+<p>Yeni bir telefonu kurarken verilerinizi kabloyla veya kablosuz olarak doğrudan eski telefondan kopyalarsanız uygulama ayarlarınız yeni telefona geçebilir. Bu aktarımı siz istersiniz ve Android yapar; kendi aracıyla veya telefon üreticisinin aracıyla ve bunların kendi koşullarıyla. Android belgelerine göre aktarım, sunuculardan geçmeden bir telefondan diğerine yapılır. Hiçbir durumda bizim sunucularımızdan geçmez: JR Soft hiçbir veri almaz.</p>
+<p>Bunun yapılıp yapılmayacağı Android sürümüne ve üreticiye bağlıdır (Android 8 veya öncesinde yapılmaz), bu yüzden bunu garanti edemeyiz. Yeni telefonu eski telefon olmadan Google hesabınızdaki yedekten kurarsanız bu uygulamanın verileri geri gelmez, çünkü o yedekte yer almazlar.</p>
+<p>Yalnızca eski telefonda işe yarayan şeyler aktarılmaz: çift çekim orijinalleri, SDK kimlikleri ve reklamlarla ve bölüm 4'teki Google kitaplıklarıyla ilgili seçimleriniz. Yeni telefonda uygulama size yeniden soracaktır.</p>
+<h2>10. Reşit olmayanlar</h2>
+<p>Uygulama 16 yaşından küçüklere yönelik değildir. Kişiselleştirilmiş reklamlar ve Google kitaplıklarının istatistikleri, AB'de bu yaşın altındakilerin kendi başlarına veremeyeceği bir onay gerektirir (GDPR md. 8; İspanya'da 14 yaş: LOPDGDD md. 7, İspanya'nın kişisel verilerin korunması ve dijital hakların güvence altına alınması hakkındaki organik kanunu).</p>
+<h2>11. Saklama süresi</h2>
+<ul>
+<li>Fotoğraflarınız, videolarınız ve ayarlarınız, siz silmedikçe veya uygulamayı kaldırmadıkça telefonunuzda saklanır (galerideki fotoğraflar ve videolar, uygulamayı kaldırsanız bile orada kalır).</li>
+<li>Kamera görüntüsü, yüz noktaları ve siluet saklanmaz: her karede atılır.</li>
+<li>Bize gönderdiğiniz e-postalar, size yanıt vermek için gereken süre boyunca ve en fazla son yanıttan itibaren bir yıl saklanır.</li>
+<li>SDK'ların ve Google kitaplıklarının topladığı veriler Google'ın politikasına göre saklanır.</li>
+</ul>
+<h2>12. Haklarınız</h2>
+<p>Bize yazarak erişim, düzeltme, silme, itiraz, kısıtlama ve taşınabilirlik haklarınızı kullanabilirsiniz. Verdiğiniz onayları, bölüm 8'de açıklandığı gibi, istediğiniz zaman geri de çekebilirsiniz; geri çekmek, daha önce yapılan işlemeyi etkilemez. Fotoğraflarınızı ve videolarınızı almadığımız için bu hakların çoğunu doğrudan telefonunuzda kullanırsınız (çektiklerinizi görüntüleyerek, silerek veya paylaşarak). Google, SDK'larının ve kitaplıklarının topladığı verilerle ilgili taleplerinizi <a href="https://myaccount.google.com">https://myaccount.google.com</a> ve <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> adreslerinde karşılar.</p>
+<p>Verilerinizi doğru işlemediğimizi düşünüyorsanız Agencia Española de Protección de Datos'a (İspanya Veri Koruma Ajansı, www.aepd.es) veya yaşadığınız, çalıştığınız ya da sorunun yaşandığı ülkedeki veri koruma makamına şikâyette bulunabilirsiniz.</p>
+<h2>13. ABD'de yaşayanlar</h2>
+<p>Kendi gizlilik yasası olan bir ABD eyaletinde yaşıyorsanız (örneğin Kaliforniya, Kolorado, Connecticut, Teksas veya Virginia), kişisel verilerinizin hedefli reklamcılık için satılmamasını ve paylaşılmamasını isteme hakkına sahipsiniz. Bunu uygulamada yapabilirsiniz: <em>Ayarlar → Gizlilik → Reklam gizlilik seçenekleri</em> → “Don't sell or share my data”. Bundan sonra yalnızca kişiselleştirilmemiş reklamlar görürsünüz. Uygulama hassas verileri kimseye göndermez: fotoğraflarınız, videolarınız ve yüzünüzün verileri telefonunuzda kalır. Reklamlar için Google'ın SDK'sı cihaz kimliklerini ve yaklaşık bir konumu (şehir düzeyinde) kullanır. Verilerinizle ilgili diğer tüm talepleriniz için bize <a href="mailto:demual@gmail.com">demual@gmail.com</a> adresinden yazın.</p>
+<h2>14. Değişiklikler</h2>
+<p>Bu politika değişirse bunu Google Play'deki uygulama sürüm notlarında belirtir ve yukarıdaki tarihi değiştiririz. Yeni bir özellik bugün kullanılmayan verilere ihtiyaç duyarsa (örneğin konumu fotoğraflara kaydetmek), bunu etkinleştirmeden önce uygulamada size açıklar ve buraya ekleriz.</p>
+<h2>15. Veri sorumlusu ve iletişim</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

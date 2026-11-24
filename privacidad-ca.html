@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ca" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Política de privadesa de Delantrás</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Política de privadesa de Delantrás</h1>
+<p>Darrera actualització: 24 de novembre de 2026</p>
+<p>Delantrás és una aplicació de JR Soft (d'ara endavant, «nosaltres») per fer fotos i vídeos amb el mòbil: amb la càmera davantera i la del darrere alhora (o l'una després de l'altra), amb controls manuals i com a càmera de selfies, amb filtres i retoc.</p>
+<h2>1. Resum</h2>
+<ul>
+<li><strong>Les teves fotos i els teus vídeos es queden al teu mòbil.</strong> No hi ha compte ni registre, i no tenim cap servidor que rebi les teves fotos, els teus vídeos ni res del que fas a l'aplicació.</li>
+<li><strong>La teva cara no surt del mòbil.</strong> El retoc, el dispar amb el somriure i el desenfocament del fons analitzen la imatge al mateix mòbil, sense desar les dades de la teva cara i sense identificar ningú (apartat 4).</li>
+<li>Aquestes tres funcions fan servir <strong>biblioteques de Google</strong> que envien estadístiques tècniques a Google. Per això només s'activen si tu ho acceptes, i ho pots canviar quan vulguis (apartat 4).</li>
+<li>L'aplicació mostra <strong>anuncis de Google AdMob</strong>, només a «Les teves fotos». Per fer-ho, l'SDK de Google recull pel seu compte algunes dades del dispositiu (apartat 6).</li>
+<li>L'aplicació <strong>no té permís d'ubicació</strong> i no desa on fas les fotos. Només l'SDK d'anuncis dedueix una ubicació aproximada a partir de l'adreça IP (apartat 6).</li>
+<li>No fem servir cap eina d'analítica <strong>pròpia</strong>.</li>
+<li>Només rebem el que tu ens escriguis per correu.</li>
+</ul>
+<h2>2. Quines dades tracta l'aplicació i on</h2>
+<div class="tabla"><table>
+<thead><tr><th>Dada</th><th>On es desa</th><th>Per a què</th></tr></thead>
+<tbody>
+<tr><td>Fotos i vídeos que fas</td><td>Només al teu mòbil, a la galeria (carpeta <code>DCIM/Delantras</code>)</td><td>Que l'aplicació funcioni: fer, desar i mostrar-te les teves fotos i vídeos</td></tr>
+<tr><td>Les dues fotos o vídeos originals de cada foto o vídeo doble</td><td>Només al teu mòbil, a la carpeta privada de l'aplicació (i, si actives «Originals de la doble a la galeria», també a <code>DCIM/Delantras/Originales</code>)</td><td>Poder recompondre la doble més endavant a «Les teves fotos». Els pots esborrar a <em>Configuració → Privadesa</em></td></tr>
+<tr><td>So dels vídeos</td><td>Dins del mateix vídeo, al teu mòbil</td><td>Gravar vídeo amb so</td></tr>
+<tr><td>Imatge de la càmera mentre fas servir el retoc, el somriure o el desenfocament del fons</td><td>S'analitza a la memòria del mòbil, fotograma a fotograma, i no es desa</td><td>Aplicar el retoc, enquadrar, fer la foto quan somrius i separar-te del fons (apartat 4)</td></tr>
+<tr><td>Guió del teleprompter</td><td>Només al teu mòbil</td><td>Mostrar-te'l mentre graves</td></tr>
+<tr><td>Configuració (flaix, filtres, mode pro, retoc, les teves eleccions de privadesa…)</td><td>Només al teu mòbil</td><td>Recordar les teves preferències</td></tr>
+<tr><td>País de la targeta SIM o, si no n'hi ha, el dels idiomes del sistema</td><td>Es llegeix al mòbil, sense permisos especials, i no en surt</td><td>Mostrar a «Més apps de JR Soft» només les aplicacions disponibles al teu país</td></tr>
+<tr><td>El teu correu i el que ens escriguis, si ens envies un missatge</td><td>Al nostre correu</td><td>Respondre't</td></tr>
+</tbody></table></div>
+<p><strong>Compartir.</strong> Quan comparteixes una foto o un vídeo, l'envies tu mateix a l'aplicació que tries al menú d'Android. Amb «Comparteix sense ubicació» (activat per defecte), les fotos surten com una còpia sense la ubicació, sense la marca i el model del mòbil i sense altres dades ocultes, i els vídeos, sense la ubicació (a Android 12 o posterior). La foto original de la teva galeria no es toca.</p>
+<p><strong>La teva galeria.</strong> Les fotos i els vídeos es desen a la galeria normal del mòbil. Si tens activada una còpia de la galeria al núvol (per exemple, Google Fotos o la del fabricant), aquest servei també els copiarà, amb les seves pròpies condicions. Això no depèn de Delantrás.</p>
+<h2>3. Permisos</h2>
+<ul>
+<li><strong>Càmera:</strong> per fer fotos i vídeos. Es demana en obrir el visor.</li>
+<li><strong>Micròfon:</strong> només per al so dels vídeos. Es demana el primer cop que graves. Si no el dones, els vídeos es graven sense so. L'aplicació no escolta ni grava so en cap altre moment.</li>
+<li><strong>Emmagatzematge:</strong> només a Android 8 i 9, per desar a la galeria. A partir d'Android 10 no cal.</li>
+<li><strong>ID de publicitat:</strong> el fa servir l'SDK d'anuncis (apartat 6).</li>
+</ul>
+<p>L'aplicació <strong>no demana</strong> permisos d'ubicació, de contactes ni de lectura de les teves fotos: «Les teves fotos» només mostra el que has fet amb Delantrás.</p>
+<h2>4. Càmera de selfies: retoc, somriure i desenfocament del fons</h2>
+<p><strong>Tot es processa al mòbil.</strong> El retoc (pell, llum i ombres sota els ulls), el dispar amb el somriure i el desenfocament del fons analitzen la imatge de la càmera <strong>només al teu mòbil</strong>, fotograma a fotograma i a la memòria.</p>
+<p><strong>Punts de la cara i silueta.</strong> Per col·locar el retoc i enquadrar, l'aplicació localitza alguns punts de la cara (el contorn, els ulls i la boca). Per al desenfocament, calcula la silueta de la persona.</p>
+<ul>
+<li><strong>No es desen</strong>: es descarten amb cada fotograma.</li>
+<li><strong>No es fan servir per identificar ningú</strong> ni es comparen amb altres cares.</li>
+<li><strong>No es dedueix</strong> el sexe, l'edat, l'origen ni les emocions de ningú.</li>
+<li>El somriure només es detecta per fer la foto.</li>
+</ul>
+<p><strong>No s'envia res.</strong> Ni les teves fotos, ni els teus vídeos, ni la imatge de la càmera, ni els punts de la teva cara, ni la teva silueta s'envien a JR Soft ni a ningú.</p>
+<p><strong>Biblioteques de Google.</strong> Aquestes funcions fan servir dues biblioteques de Google LLC que arriben al teu mòbil amb els serveis de Google Play:</p>
+<ul>
+<li><strong>ML Kit</strong> (detecció de cares). Si el seu model encara no és al teu mòbil, els serveis de Google Play el baixen el primer cop que fas servir el retoc o el somriure, després d'«Activa».</li>
+<li><strong>LiteRT</strong> (el motor que executa el model de silueta, <code>selfie_segmenter</code>, que va dins de l'aplicació). Si encara no és al teu mòbil, els serveis de Google Play baixen LiteRT el primer cop que fas servir el desenfocament del fons.</li>
+</ul>
+<p>Els serveis de Google Play formen part del sistema del mòbil i poden tenir ja aquests components o baixar-los pel seu compte, perquè també els fan servir altres aplicacions i funcions del mòbil. Aquestes baixades no depenen de Delantrás: l'aplicació no fa servir cap d'aquestes biblioteques fins que tries «Activa».</p>
+<p>Les imatges es processen al mòbil i <strong>no s'envien a Google</strong>. Però, quan es fan servir, aquestes biblioteques envien a Google, de manera xifrada:</p>
+<ul>
+<li>dades del dispositiu (fabricant, model, versió d'Android i acceleradors disponibles) i de l'aplicació (nom del paquet i versió);</li>
+<li>identificadors d'aquesta instal·lació i del dispositiu;</li>
+<li>mètriques de rendiment i d'ús, configuració (per exemple, el format i la resolució de la imatge), mida de l'entrada i de la sortida, tipus d'esdeveniment i codis d'error.</li>
+</ul>
+<p>Segons Google, fa servir aquestes dades per mesurar, mantenir, corregir i millorar aquestes biblioteques, i per detectar abusos, i ML Kit no les passa a tercers. LiteRT també es pot connectar amb Google per rebre correccions, models actualitzats i dades de compatibilitat amb el maquinari del mòbil.</p>
+<p>Més informació:</p>
+<ul>
+<li>Dades d'ML Kit: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>Condicions d'ML Kit: <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>LiteRT als serveis de Google Play: <a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Política de privadesa de Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>La teva elecció.</strong> El primer cop que fas servir una d'aquestes funcions, l'aplicació t'ho explica tot i et pregunta. Amb «Activa», es carreguen les biblioteques. Amb «Ara no», no es carreguen, aquestes tres funcions queden apagades i la resta de la càmera funciona igual. Ho pots canviar quan vulguis a <em>Configuració → Privadesa → Retoc, somriure i fons</em>.</p>
+<p><strong>Efectes del fabricant.</strong> Alguns mòbils ofereixen els seus propis efectes de càmera (Nit, HDR, Retrat o Retoc facial). Quan els tries, els aplica el programari de la càmera del teu mòbil, al mateix mòbil, no pas les biblioteques de Google.</p>
+<h2>5. Base jurídica</h2>
+<ul>
+<li><strong>Execució del servei que demanes</strong> (art. 6.1.b del RGPD): fer i desar les teves fotos i vídeos, gravar el so dels vídeos, aplicar els filtres i el retoc i analitzar la imatge al mòbil per a les funcions que tries, tot al teu mòbil.</li>
+<li><strong>Consentiment</strong> (art. 6.1.a del RGPD i art. 22.2 de la Llei 34/2002, LSSI-CE):<ul>
+<li>per a les estadístiques tècniques que les biblioteques de Google envien quan fas servir el retoc, el somriure o el desenfocament del fons (apartat 4);</li>
+<li>perquè l'SDK d'anuncis desi o llegeixi informació al teu mòbil i per mostrar-te <strong>publicitat personalitzada</strong>. Aquest consentiment es demana amb el formulari de Google a l'Espai Econòmic Europeu, el Regne Unit i Suïssa. Si no el dones, Google et pot mostrar anuncis limitats, no personalitzats. Per mesurar-los i prevenir el frau, Google i els seus socis es basen en el seu interès legítim, al qual et pots oposar en aquest mateix formulari.</li>
+</ul></li>
+<li><strong>Interès legítim</strong> (art. 6.1.f del RGPD): respondre els correus que ens envies.</li>
+</ul>
+<h2>6. Anuncis (Google AdMob) i SDK de tercers</h2>
+<p><strong>Anuncis.</strong> L'aplicació només mostra anuncis a «Les teves fotos», mai al visor de la càmera. Fa servir l'<strong>SDK de Google Mobile Ads (AdMob)</strong> i la <strong>plataforma de missatges d'usuari de Google (UMP)</strong> per mostrar anuncis i demanar-te el consentiment el primer cop que entres a «Les teves fotos». Aquests SDK recullen pel seu compte les dades següents, i les comparteixen amb Google, per mostrar i mesurar els anuncis, fer analítica i prevenir el frau:</p>
+<ul>
+<li>l'<strong>adreça IP</strong>, de la qual es dedueix una <strong>ubicació aproximada</strong>;</li>
+<li><strong>identificadors del dispositiu</strong>: l'ID de publicitat i l'app set ID;</li>
+<li>les teves <strong>interaccions amb l'aplicació i amb els anuncis</strong> (per exemple, obertures i tocs);</li>
+<li><strong>diagnòstics</strong> (rendiment de l'aplicació i de l'SDK).</li>
+</ul>
+<p>L'aplicació no afegeix a les peticions d'anuncis res de les teves fotos, dels teus vídeos ni de la teva cara.</p>
+<p>Per mostrar i mesurar anuncis, l'SDK d'anuncis de Google (AdMob) recull identificadors del dispositiu, tal com s'explica en aquesta política. Algunes lleis de privadesa dels EUA poden considerar que això és «vendre» o «compartir» dades personals (consulta l'apartat 13, «Residents als EUA»).</p>
+<p>Més informació: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Geolocalització precisa.</strong> El missatge de consentiment dels anuncis el mostra Google amb un text comú a tots els seus socis publicitaris, i per això esmenta la geolocalització precisa. Aquesta aplicació no té permís d'ubicació ni passa la ubicació del GPS a l'SDK. Segons Google, el seu SDK d'anuncis només fa servir la ubicació aproximada que es dedueix de l'adreça IP. Pots rebutjar aquest ús a «Gestiona les opcions».</p>
+<p><strong>Firebase Remote Config.</strong> L'aplicació l'inclou, desactivat: no envia res mentre no s'activi. Si algun dia s'activa, aquesta política ho dirà.</p>
+<p><strong>Google Play.</strong> «Valora l'app» i la petició de valoració dins de l'aplicació fan servir la funció de valoracions de Google Play. La teva valoració la rep Google Play, amb les seves pròpies condicions, no pas nosaltres.</p>
+<h2>7. Transferències internacionals</h2>
+<p>Google LLC pot tractar als Estats Units les dades que recullen els seus SDK i les seves biblioteques. Google LLC està adherida al <strong>Marc de privadesa de dades UE-EUA</strong> (Data Privacy Framework), a la seva <strong>extensió per al Regne Unit</strong> i al <strong>Marc Suïssa-EUA</strong>, i, a més, fa servir clàusules contractuals tipus.</p>
+<p>El nostre correu el presta Google (Gmail), amb les mateixes garanties.</p>
+<h2>8. Com retirar el consentiment i controlar les teves dades</h2>
+<ul>
+<li><strong>Retoc, somriure i desenfocament del fons</strong>: a <em>Configuració → Privadesa → Retoc, somriure i fons</em>. Si ho apagues, les biblioteques de Google es deixen de fer servir i aquestes funcions s'apaguen. El que ja s'hagués enviat, Google ho tracta segons la seva política.</li>
+<li><strong>Anuncis</strong>: a l'aplicació, <em>Configuració → Privadesa → Opcions de privadesa dels anuncis</em> (apareix on la llei ho exigeix: EEE, Regne Unit, Suïssa i alguns estats dels EUA). Allà pots retirar el consentiment o oposar-te a l'interès legítim, amb la mateixa facilitat amb què el vas donar. També pots restablir o suprimir l'ID de publicitat a la configuració de Google del teu mòbil.</li>
+<li><strong>Micròfon i càmera</strong>: pots retirar el permís a l'aplicació a la configuració d'Android.</li>
+<li><strong>Les teves fotos i vídeos</strong>: esborra'ls des de «Les teves fotos» o des de la galeria. Els originals de les dobles s'esborren a <em>Configuració → Privadesa</em> o en desinstal·lar l'aplicació. Les fotos i els vídeos de la galeria no s'esborren en desinstal·lar l'aplicació.</li>
+</ul>
+<h2>9. Còpies de seguretat i canvi de mòbil</h2>
+<p>La còpia de seguretat d'Android al núvol (la del teu compte de Google) està desactivada per a les dades d'aquesta aplicació: no se'n puja cap. Android sí que desa al teu compte la llista de les aplicacions que tenies instal·lades, per tornar-les a instal·lar, però aquesta llista la gestiona Google i no porta dades de l'aplicació. Les teves fotos i vídeos són a la galeria del mòbil, no dins de l'aplicació (apartat 2).</p>
+<p>Si, en configurar un mòbil nou, copies les teves dades directament des de l'antic, amb cable o sense, la teva configuració de l'aplicació pot passar al mòbil nou. Aquest traspàs el demanes tu i el fa Android, amb la seva eina o amb la del fabricant del mòbil i amb les seves pròpies condicions. Segons la documentació d'Android, va d'un mòbil a l'altre sense passar per servidors. En cap cas no passa pels nostres: JR Soft no rep cap dada.</p>
+<p>Que es faci o no depèn de la versió d'Android i del fabricant (a Android 8 o anterior no es fa), de manera que no ho podem garantir. Si configures el mòbil nou des de la còpia del teu compte de Google, sense l'antic, les dades d'aquesta aplicació no tornen, perquè no són en aquesta còpia.</p>
+<p>No es traspassa el que només serveix al mòbil antic: els originals de les dobles, els identificadors dels SDK i les teves eleccions sobre els anuncis i sobre les biblioteques de Google de l'apartat 4. Al mòbil nou, l'aplicació t'ho tornarà a preguntar.</p>
+<h2>10. Menors</h2>
+<p>L'aplicació no està adreçada a menors de 16 anys. Els anuncis personalitzats i les estadístiques de les biblioteques de Google requereixen un consentiment que els menors d'aquesta edat no poden donar per si mateixos a la UE (art. 8 del RGPD; 14 anys a Espanya, art. 7 de la LOPDGDD).</p>
+<h2>11. Conservació</h2>
+<ul>
+<li>Les teves fotos, vídeos i configuració es conserven al teu mòbil mentre no els esborris o no desinstal·lis l'aplicació (les fotos i els vídeos de la galeria hi continuen encara que la desinstal·lis).</li>
+<li>La imatge de la càmera, els punts de la cara i la silueta no es conserven: es descarten amb cada fotograma.</li>
+<li>Els correus que ens envies, el temps necessari per respondre't i, com a màxim, un any des de l'última resposta.</li>
+<li>Les dades que recullen els SDK i les biblioteques de Google es conserven segons la política de Google.</li>
+</ul>
+<h2>12. Els teus drets</h2>
+<p>Pots exercir els drets d'accés, rectificació, supressió, oposició, limitació i portabilitat escrivint-nos. També pots retirar en qualsevol moment els consentiments que hagis donat, com s'explica a l'apartat 8; retirar-los no afecta el que s'hagi tractat abans. Com que no rebem les teves fotos ni els teus vídeos, la majoria d'aquests drets els exerceixes directament al teu mòbil (veure, esborrar o compartir el que has fet). Pel que fa a les dades que recullen els seus SDK i les seves biblioteques, Google te'ls atén a <a href="https://myaccount.google.com">https://myaccount.google.com</a> i <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+<p>Si creus que no hem tractat bé les teves dades, pots presentar una reclamació davant l'Agencia Española de Protección de Datos (www.aepd.es) o davant l'autoritat de protecció de dades del país on vius, on treballes o on va passar el problema.</p>
+<h2>13. Residents als EUA</h2>
+<p>Si vius en un estat dels EUA amb una llei de privadesa pròpia (per exemple, Califòrnia, Colorado, Connecticut, Texas o Virgínia), tens dret a demanar que les teves dades personals no es venguin ni es comparteixin per a publicitat dirigida. Ho pots fer a l'aplicació: <em>Configuració → Privadesa → Opcions de privadesa dels anuncis</em> → «Don't sell or share my data». A partir d'aleshores només veuràs anuncis no personalitzats. L'aplicació no envia dades sensibles a ningú: les teves fotos, els teus vídeos i les dades de la teva cara es queden al teu mòbil. Per als anuncis, l'SDK de Google fa servir identificadors del dispositiu i una ubicació aproximada (a escala de ciutat). Per a qualsevol altra petició sobre les teves dades, escriu-nos a <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<h2>14. Canvis</h2>
+<p>Si aquesta política canvia, ho indicarem a les notes de la versió de l'aplicació a Google Play i canviarem la data de dalt. Si una funció nova necessita dades que avui no es fan servir (per exemple, desar la ubicació a les fotos), t'ho explicarem a l'aplicació abans d'activar-la i ho afegirem aquí.</p>
+<h2>15. Responsable i contacte</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

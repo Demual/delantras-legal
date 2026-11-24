@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-TW" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Delantrás 隱私權政策</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Delantrás 隱私權政策</h1>
+<p>最後更新：2026年11月24日</p>
+<p>Delantrás 是 JR Soft（以下稱「我們」）推出的應用程式，可以用手機拍攝相片和影片：可同時（或先後）使用前置鏡頭和後置鏡頭，可使用手動控制，也可以當作有濾鏡和修飾功能的自拍相機。</p>
+<h2>1. 摘要</h2>
+<ul>
+<li><strong>您的相片和影片會留在您的手機裡</strong>。不需要帳戶，也不需要註冊，我們也沒有任何伺服器會接收您的相片、影片或您在應用程式中所做的任何事。</li>
+<li><strong>您的臉部資訊不會離開手機</strong>。修飾、微笑拍照和背景模糊都在手機本身分析影像，不會儲存您的臉部資料，也不會辨識任何人（見第4節）。</li>
+<li>這三項功能使用會向 Google 傳送技術統計資料的 <strong>Google 程式庫</strong>。因此，只有在您同意後才會開啟，您也可以隨時變更（見第4節）。</li>
+<li>應用程式會顯示 <strong>Google AdMob 廣告</strong>，而且只在「你的相片」中顯示。為此，Google 的 SDK 會自行收集部分裝置資料（見第6節）。</li>
+<li>應用程式<strong>沒有位置權限</strong>，也不會記錄您拍照的地點。只有廣告 SDK 會根據 IP 位址推斷大概位置（見第6節）。</li>
+<li>我們不使用任何<strong>自有的</strong>分析工具。</li>
+<li>我們只會收到您透過電子郵件寫給我們的內容。</li>
+</ul>
+<h2>2. 應用程式處理哪些資料，以及在哪裡處理</h2>
+<div class="tabla"><table>
+<thead><tr><th>資料</th><th>存放位置</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>您拍攝的相片和影片</td><td>只存放在您的手機裡，位於相簿中（<code>DCIM/Delantras</code> 資料夾）</td><td>讓應用程式正常運作：拍攝、儲存並向您顯示您的相片和影片</td></tr>
+<tr><td>每張雙鏡頭相片或每段雙鏡頭影片的兩張原始相片或兩段原始影片</td><td>只存放在您的手機裡，位於應用程式的私人資料夾中（如果您開啟「雙鏡頭原圖存入相簿」，也會存放在 <code>DCIM/Delantras/Originales</code>）</td><td>方便之後在「你的相片」中重新排版雙鏡頭作品。您可以在 <em>設定 → 隱私</em> 中刪除</td></tr>
+<tr><td>影片的聲音</td><td>在影片本身之中，存放在您的手機裡</td><td>錄製有聲音的影片</td></tr>
+<tr><td>您使用修飾、微笑拍照或背景模糊時的相機畫面</td><td>在手機記憶體中逐格分析，不會儲存</td><td>套用修飾、構圖、在您微笑時拍照，以及將您與背景分開（見第4節）</td></tr>
+<tr><td>提詞器的文稿</td><td>只存放在您的手機裡</td><td>在您錄影時顯示給您看</td></tr>
+<tr><td>設定（閃光燈、濾鏡、專業模式、修飾、您的隱私選擇等）</td><td>只存放在您的手機裡</td><td>記住您的偏好</td></tr>
+<tr><td>SIM 卡所屬的國家；如果沒有 SIM 卡，則為系統語言的國家</td><td>在手機上讀取，不需要特殊權限，也不會離開手機</td><td>在「JR Soft 的更多應用程式」中，只顯示您所在國家/地區可用的應用程式</td></tr>
+<tr><td>如果您傳訊息給我們：您的電子郵件地址和您寫給我們的內容</td><td>在我們的電子郵件信箱中</td><td>回覆您</td></tr>
+</tbody></table></div>
+<p><strong>分享</strong>：當您分享相片或影片時，是您自己透過 Android 選單將它傳送到您選擇的應用程式。開啟「分享時不含位置資訊」（預設為開啟）後，相片會以副本的形式傳送，不含位置資訊、手機的品牌和型號，以及其他隱藏資料；影片則不含位置資訊（Android 12 以上版本）。您相簿中的原始相片不會被更動。</p>
+<p><strong>您的相簿</strong>：相片和影片會儲存在手機的一般相簿中。如果您開啟了相簿的雲端備份（例如 Google 相簿或手機製造商的備份），該服務也會依照其本身的條款複製這些相片和影片。這不取決於 Delantrás。</p>
+<h2>3. 權限</h2>
+<ul>
+<li><strong>相機</strong>：用來拍攝相片和影片。在開啟觀景窗時要求。</li>
+<li><strong>麥克風</strong>：只用於影片的聲音。在您第一次錄影時要求。如果您不授予權限，影片會在沒有聲音的情況下錄製。在其他任何時候，應用程式都不會收聽或錄製聲音。</li>
+<li><strong>儲存空間</strong>：只在 Android 8 和 9 上需要，用來儲存到相簿。從 Android 10 起不再需要。</li>
+<li><strong>廣告 ID</strong>：由廣告 SDK 使用（見第6節）。</li>
+</ul>
+<p>應用程式<strong>不會要求</strong>位置、聯絡人或讀取您相片的權限：「你的相片」只會顯示您用 Delantrás 拍攝的內容。</p>
+<h2>4. 自拍相機：修飾、微笑拍照和背景模糊</h2>
+<p><strong>一切都在手機上處理</strong>。修飾（皮膚、光線和眼下陰影）、微笑拍照和背景模糊<strong>只在您的手機上</strong>分析相機畫面，逐格在記憶體中進行。</p>
+<p><strong>臉部特徵點和輪廓</strong>：為了決定修飾的位置和構圖，應用程式會找出臉部的一些特徵點（臉部輪廓、眼睛和嘴巴）。為了背景模糊，應用程式會計算人物的輪廓。</p>
+<ul>
+<li><strong>不會儲存</strong>：每個影格處理完就會捨棄。</li>
+<li><strong>不會用來辨識任何人</strong>，也不會與其他人臉比對。</li>
+<li><strong>不會推斷</strong>任何人的性別、年齡、出身或情緒。</li>
+<li>偵測微笑只是為了拍照。</li>
+</ul>
+<p><strong>不會傳送任何內容</strong>。您的相片、影片、相機畫面、臉部特徵點和輪廓都不會傳送給 JR Soft 或任何人。</p>
+<p><strong>Google 程式庫</strong>：這些功能使用 Google LLC 的兩個程式庫，它們隨 Google Play services 來到您的手機上：</p>
+<ul>
+<li><strong>ML Kit</strong>（臉部偵測）。如果您的手機上還沒有它的模型，Google Play services 會在您選擇「開啟」之後、第一次使用修飾或微笑拍照時下載。</li>
+<li><strong>LiteRT</strong>（執行輪廓模型 <code>selfie_segmenter</code> 的引擎，該模型內建於應用程式中）。如果您的手機上還沒有 LiteRT，Google Play services 會在您第一次使用背景模糊時下載 LiteRT。</li>
+</ul>
+<p>Google Play services 是手機系統的一部分，由於其他應用程式和手機功能也會用到這些元件，它可能已經有這些元件，或自行下載。這些下載與 Delantrás 無關：在您選擇「開啟」之前，應用程式不會使用其中任何一個程式庫。</p>
+<p>影像在手機上處理，<strong>不會傳送給 Google</strong>。但在使用時，這些程式庫會以加密方式向 Google 傳送：</p>
+<ul>
+<li>裝置資料（製造商、型號、Android 版本和可用的加速器）和應用程式資料（套件名稱和版本）；</li>
+<li>這次安裝和裝置的識別碼；</li>
+<li>效能和使用指標、設定（例如影像的格式和解析度）、輸入和輸出的大小、事件類型和錯誤代碼。</li>
+</ul>
+<p>據 Google 表示，Google 會將這些資料用於衡量、維護、修正和改進這些程式庫，以及偵測濫用行為，而且 ML Kit 不會將這些資料提供給第三方。LiteRT 也可能連線到 Google，以接收修正、更新的模型，以及與手機硬體相容性相關的資料。</p>
+<p>更多資訊：</p>
+<ul>
+<li>ML Kit 的資料：<a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>ML Kit 的條款：<a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>Google Play services 中的 LiteRT：<a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Google 隱私權政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>您的選擇</strong>：您第一次使用其中一項功能時，應用程式會向您說明以上所有內容並詢問您。選擇「開啟」，就會載入這些程式庫。選擇「暫不」，就不會載入這些程式庫，這三項功能會保持關閉，相機的其他功能照常運作。您可以隨時在 <em>設定 → 隱私 → 修飾、微笑拍照和背景</em> 中變更。</p>
+<p><strong>手機製造商的效果</strong>：有些手機提供自己的相機效果（夜景、HDR、人像或臉部修飾）。當您選擇這些效果時，是由您手機的相機軟體在手機本身套用，而不是由 Google 的程式庫套用。</p>
+<h2>5. 法律依據</h2>
+<ul>
+<li><strong>履行您所要求的服務</strong>（《一般資料保護規則》（GDPR）第6條第1項(b)款）：拍攝和儲存您的相片和影片、錄製影片的聲音、套用濾鏡和修飾，以及為您選擇的功能在手機上分析影像，這一切都在您的手機上進行。</li>
+<li><strong>同意</strong>（GDPR 第6條第1項(a)款，以及 Ley 34/2002（LSSI-CE，西班牙《資訊社會服務及電子商務法》）第22條第2項）：<ul>
+<li>針對您使用修飾、微笑拍照或背景模糊時，Google 程式庫傳送的技術統計資料（見第4節）；</li>
+<li>針對廣告 SDK 在您的手機上儲存或讀取資訊，以及向您顯示<strong>個人化廣告</strong>。在歐洲經濟區（EEA）、英國和瑞士，會透過 Google 的表單徵求這項同意。如果您不同意，Google 可能會向您顯示有限的、非個人化的廣告。為了衡量廣告成效和防範詐騙，Google 及其合作夥伴以其正當利益為依據，您可以在同一份表單中提出反對。</li>
+</ul></li>
+<li><strong>正當利益</strong>（GDPR 第6條第1項(f)款）：回覆您寄給我們的電子郵件。</li>
+</ul>
+<h2>6. 廣告（Google AdMob）和第三方 SDK</h2>
+<p><strong>廣告</strong>：應用程式只會在「你的相片」中顯示廣告，絕不會在相機觀景窗中顯示。應用程式使用 <strong>Google 行動廣告 SDK（AdMob）</strong> 和 <strong>Google 使用者訊息平台（UMP）</strong> 來顯示廣告，並在您第一次進入「你的相片」時徵求您的同意。為了顯示和衡量廣告、進行分析以及防範詐騙，這些 SDK 會自行收集以下資料並與 Google 分享：</p>
+<ul>
+<li><strong>IP 位址</strong>，可從中推斷出<strong>大概位置</strong>；</li>
+<li><strong>裝置識別碼</strong>：廣告 ID 和 app set ID；</li>
+<li>您<strong>與應用程式和廣告的互動</strong>（例如開啟和輕觸）；</li>
+<li><strong>診斷資訊</strong>（應用程式和 SDK 的效能）。</li>
+</ul>
+<p>應用程式不會在廣告請求中加入任何與您的相片、影片或臉部有關的內容。</p>
+<p>為了顯示和衡量廣告，Google 的廣告 SDK（AdMob）會收集裝置識別碼，如本政策所述。美國的部分隱私權法律可能將此視為「出售」或「分享」個人資料（見第13節「美國居民」）。</p>
+<p>更多資訊：<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>精確地理位置</strong>：廣告的同意訊息由 Google 顯示，使用的是其所有廣告合作夥伴共用的文字，因此會提到精確地理位置。本應用程式沒有位置權限，也不會將 GPS 位置傳給 SDK。據 Google 表示，其廣告 SDK 只會使用從 IP 位址推斷出的大概位置。您可以在「管理選項」中拒絕這項使用。</p>
+<p><strong>Firebase Remote Config</strong>：應用程式內含此元件，但處於停用狀態：在啟用之前不會傳送任何內容。如果日後啟用，本政策會加以說明。</p>
+<p><strong>Google Play</strong>：「為應用程式評分」和應用程式內的評分要求使用 Google Play 的評分功能。您的評分由 Google Play 依其本身條款接收，而不是由我們接收。</p>
+<h2>7. 國際傳輸</h2>
+<p>Google LLC 可能會在美國處理其 SDK 和程式庫所收集的資料。Google LLC 已加入<strong>歐盟-美國資料隱私框架</strong>（Data Privacy Framework）、其<strong>英國延伸</strong>，以及<strong>瑞士-美國資料隱私框架</strong>，並且也使用標準契約條款。</p>
+<p>我們的電子郵件由 Google（Gmail）提供，具有相同的保障措施。</p>
+<h2>8. 如何撤回同意並控制您的資料</h2>
+<ul>
+<li><strong>修飾、微笑拍照和背景模糊</strong>：在 <em>設定 → 隱私 → 修飾、微笑拍照和背景</em> 中。關閉後，就不再使用 Google 的程式庫，這些功能也會關閉。已經傳送的內容由 Google 依其政策處理。</li>
+<li><strong>廣告</strong>：在應用程式中，<em>設定 → 隱私 → 廣告隱私權選項</em>（在法律要求的地區顯示：EEA、英國、瑞士和美國部分州）。您可以在那裡撤回同意或反對正當利益，就和當初給予同意一樣容易。您也可以在手機的 Google 設定中重設或刪除廣告 ID。</li>
+<li><strong>麥克風和相機</strong>：您可以在 Android 設定中撤銷應用程式的權限。</li>
+<li><strong>您的相片和影片</strong>：從「你的相片」或相簿中刪除。雙鏡頭原始檔可在 <em>設定 → 隱私</em> 中刪除，或在解除安裝應用程式時刪除。相簿中的相片和影片不會因解除安裝應用程式而刪除。</li>
+</ul>
+<h2>9. 備份和換手機</h2>
+<p>Android 的雲端備份（您 Google 帳戶中的備份）已對本應用程式的資料停用：不會上傳任何資料。Android 確實會在您的帳戶中保存您已安裝的應用程式清單，以便重新安裝，但這份清單由 Google 管理，不包含本應用程式的資料。您的相片和影片位於手機相簿中，而不在應用程式內（見第2節）。</p>
+<p>如果您在設定新手機時，直接從舊手機複製資料（無論是否使用傳輸線），本應用程式的設定可能會轉移到新手機。這項轉移由您提出，由 Android 使用其本身的工具或手機製造商的工具，依其本身的條款進行。根據 Android 的說明文件，資料會從一支手機傳到另一支手機，不經過伺服器。無論如何都不會經過我們的伺服器：JR Soft 不會收到任何資料。</p>
+<p>是否會進行轉移，取決於 Android 版本和手機製造商（Android 8 以下版本不會進行），因此我們無法保證。如果您不使用舊手機，而是從 Google 帳戶中的備份設定新手機，本應用程式的資料不會恢復，因為這些資料不在該備份中。</p>
+<p>只在舊手機上有用的內容不會轉移：雙鏡頭原始檔、SDK 的識別碼，以及您對廣告和第4節所述 Google 程式庫的選擇。在新手機上，應用程式會再次詢問您。</p>
+<h2>10. 未成年人</h2>
+<p>本應用程式不以未滿16歲的未成年人為對象。個人化廣告和 Google 程式庫的統計資料需要取得同意，而在歐盟，未滿該年齡的未成年人無法自行給予同意（GDPR 第8條；在西班牙為14歲，LOPDGDD（西班牙《個人資料保護及數位權利保障組織法》）第7條）。</p>
+<h2>11. 保存期限</h2>
+<ul>
+<li>您的相片、影片和設定會保存在您的手機裡，直到您刪除它們或解除安裝應用程式（即使解除安裝應用程式，相簿中的相片和影片仍會保留）。</li>
+<li>相機畫面、臉部特徵點和輪廓不會保存：每個影格處理完就會捨棄。</li>
+<li>您寄給我們的電子郵件，會保存至回覆您所需的時間，最長自最後一次回覆起一年。</li>
+<li>SDK 和 Google 程式庫所收集的資料，依 Google 的政策保存。</li>
+</ul>
+<h2>12. 您的權利</h2>
+<p>您可以寫信給我們，行使存取、更正、刪除、反對、限制處理和可攜的權利。您也可以隨時撤回已給予的同意，方法見第8節；撤回同意不影響先前已進行的處理。由於我們不會收到您的相片和影片，其中大部分權利您可以直接在手機上行使（查看、刪除或分享您拍攝的內容）。關於其 SDK 和程式庫所收集的資料，Google 會在 <a href="https://myaccount.google.com">https://myaccount.google.com</a> 和 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> 為您處理。</p>
+<p>如果您認為我們沒有妥善處理您的資料，可以向 Agencia Española de Protección de Datos（西班牙資料保護局，www.aepd.es）申訴，或向您居住、工作或問題發生所在國家的資料保護機關申訴。</p>
+<h2>13. 美國居民</h2>
+<p>如果您居住在有自己隱私權法律的美國州（例如加州、科羅拉多州、康乃狄克州、德州或維吉尼亞州），您有權要求不出售您的個人資料，也不為目標式廣告而分享您的個人資料。您可以在應用程式中進行：<em>設定 → 隱私 → 廣告隱私權選項</em> →「Don't sell or share my data」。此後，您只會看到非個人化廣告。應用程式不會向任何人傳送敏感資料：您的相片、影片和臉部資料都會留在您的手機裡。為了顯示廣告，Google 的 SDK 會使用裝置識別碼和大概位置（城市層級）。如有任何其他與您資料相關的要求，請寫信至 <a href="mailto:demual@gmail.com">demual@gmail.com</a>。</p>
+<h2>14. 變更</h2>
+<p>如果本政策有所變更，我們會在 Google Play 上應用程式的版本資訊中註明，並更改上方的日期。如果某項新功能需要使用目前未使用的資料（例如在相片中儲存位置），我們會在啟用前在應用程式中向您說明，並在此處補充。</p>
+<h2>15. 負責人與聯絡方式</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

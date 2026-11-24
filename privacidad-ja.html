@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="ja" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Delantrás のプライバシーポリシー</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Delantrás のプライバシーポリシー</h1>
+<p>最終更新日：2026年11月24日</p>
+<p>Delantrás は、スマートフォンで写真や動画を撮るための、JR Soft（以下「私たち」）のアプリです。フロントカメラとリアカメラを同時に（または続けて）使うことができ、マニュアル操作で撮ることも、フィルターとレタッチ付きのセルフィーカメラとして使うこともできます。</p>
+<h2>1. 概要</h2>
+<ul>
+<li><strong>写真と動画は、お使いのスマートフォンの中に残ります</strong>。アカウントも登録もなく、写真、動画、アプリで行うことのいずれかを受け取るサーバーを、私たちは一切持っていません。</li>
+<li><strong>あなたの顔はスマートフォンの外に出ません</strong>。レタッチ、笑顔での撮影、背景ぼかしは、スマートフォン自体の中で画像を分析します。顔のデータは保存せず、誰かを識別することもありません（第4項を参照）。</li>
+<li>この3つの機能は、技術的な統計を Google に送信する <strong>Google のライブラリ</strong>を使用します。そのため、ご自身が同意した場合にのみオンになり、いつでも変更できます（第4項を参照）。</li>
+<li>このアプリは、「あなたの写真」の中でだけ <strong>Google AdMob の広告</strong>を表示します。そのため、Google の SDK が独自にデバイスの一部のデータを収集します（第6項を参照）。</li>
+<li>このアプリには<strong>位置情報の権限がなく</strong>、写真を撮った場所も記録しません。広告の SDK だけが、IP アドレスからおおよその位置情報を推測します（第6項）。</li>
+<li>私たちは、<strong>独自の</strong>分析ツールを一切使用していません。</li>
+<li>私たちが受け取るのは、ご自身がメールで送ってくださった内容だけです。</li>
+</ul>
+<h2>2. アプリが扱うデータとその場所</h2>
+<div class="tabla"><table>
+<thead><tr><th>データ</th><th>保存場所</th><th>目的</th></tr></thead>
+<tbody>
+<tr><td>撮影した写真と動画</td><td>スマートフォン内のみ。ギャラリー（<code>DCIM/Delantras</code> フォルダ）</td><td>アプリを動作させるため：写真と動画を撮影し、保存し、表示するため</td></tr>
+<tr><td>デュアルの写真・動画それぞれの元になる、2枚の写真または2本の動画</td><td>スマートフォン内のみ。アプリ専用のフォルダ（「デュアルの元画像をギャラリーにも」をオンにした場合は、<code>DCIM/Delantras/Originales</code> にも保存）</td><td>後で「あなたの写真」でデュアルを組み直せるようにするため。<em>設定 → プライバシー</em> で削除できます</td></tr>
+<tr><td>動画の音声</td><td>動画そのものの中。スマートフォン内</td><td>音声付きの動画を録画するため</td></tr>
+<tr><td>レタッチ、笑顔撮影、背景ぼかしを使っている間のカメラの映像</td><td>スマートフォンのメモリ内でフレームごとに分析され、保存されません</td><td>レタッチをかけ、構図を合わせ、笑顔でシャッターを切り、背景からあなたを切り分けるため（第4項を参照）</td></tr>
+<tr><td>プロンプターの原稿</td><td>スマートフォン内のみ</td><td>録画中に表示するため</td></tr>
+<tr><td>設定（フラッシュ、フィルター、プロモード、レタッチ、プライバシーに関する選択など）</td><td>スマートフォン内のみ</td><td>設定内容を記憶するため</td></tr>
+<tr><td>SIM カードの国。SIM カードがない場合は、システムの言語の国</td><td>特別な許可なしにスマートフォン内で読み取られ、外には出ません</td><td>「JR Soft のその他のアプリ」で、お住まいの国で利用できるアプリだけを表示するため</td></tr>
+<tr><td>メッセージを送ってくださった場合の、メールアドレスと内容</td><td>私たちのメール</td><td>返信するため</td></tr>
+</tbody></table></div>
+<p><strong>共有</strong>：写真や動画を共有するときは、Android のメニューで選んだアプリに、ご自身が送信します。「位置情報なしで共有」（初期設定でオン）では、写真は、位置情報、スマートフォンのメーカーと機種、その他の隠れたデータを除いたコピーとして送られ、動画は位置情報を除いて送られます（Android 12 以降）。ギャラリーにある元の写真はそのままです。</p>
+<p><strong>ギャラリー</strong>：写真と動画は、スマートフォンの通常のギャラリーに保存されます。ギャラリーのクラウドへのバックアップ（Google フォトやメーカーのサービスなど）をオンにしている場合は、そのサービスも独自の条件のもとで写真と動画をコピーします。これは Delantrás によって決まるものではありません。</p>
+<h2>3. 権限</h2>
+<ul>
+<li><strong>カメラ</strong>：写真と動画を撮るため。ファインダーを開くときに許可をお願いします。</li>
+<li><strong>マイク</strong>：動画の音声のためだけに使います。初めて録画するときに許可をお願いします。許可しない場合、動画は音声なしで録画されます。それ以外のときに、アプリが音を聞いたり録音したりすることはありません。</li>
+<li><strong>ストレージ</strong>：Android 8 と 9 でのみ、ギャラリーに保存するために使います。Android 10 以降は必要ありません。</li>
+<li><strong>広告 ID</strong>：広告の SDK が使用します（第6項を参照）。</li>
+</ul>
+<p>このアプリは、位置情報、連絡先、写真の読み取りの権限を<strong>求めません</strong>。「あなたの写真」に表示されるのは、Delantrás で撮ったものだけです。</p>
+<h2>4. セルフィーカメラ：レタッチ、笑顔撮影、背景ぼかし</h2>
+<p><strong>すべてスマートフォン内で処理します</strong>。レタッチ（肌、光、目の下の影）、笑顔での撮影、背景ぼかしは、カメラの映像を<strong>スマートフォンの中だけで</strong>、フレームごとに、メモリ上で分析します。</p>
+<p><strong>顔の特徴点とシルエット</strong>：レタッチの位置を決め、構図を合わせるために、アプリは顔のいくつかの特徴点（輪郭、目、口）を見つけます。背景ぼかしのためには、人物のシルエットを割り出します。</p>
+<ul>
+<li><strong>保存しません</strong>：フレームごとに破棄します。</li>
+<li><strong>誰かを識別するためには使いません</strong>。ほかの顔と照合することもありません。</li>
+<li>誰の性別、年齢、出身、感情も<strong>推測しません</strong>。</li>
+<li>笑顔は、写真を撮るためだけに検出します。</li>
+</ul>
+<p><strong>何も送信しません</strong>。写真、動画、カメラの映像、顔の特徴点、シルエットのいずれも、JR Soft にも、ほかの誰にも送信されません。</p>
+<p><strong>Google のライブラリ</strong>：これらの機能は、Google Play services とともにスマートフォンに届く、Google LLC の2つのライブラリを使います。</p>
+<ul>
+<li><strong>ML Kit</strong>（顔検出）。そのモデルがまだスマートフォンにない場合は、「オンにする」を選んだあと、レタッチや笑顔撮影を初めて使うときに、Google Play services がダウンロードします。</li>
+<li><strong>LiteRT</strong>（シルエットのモデル <code>selfie_segmenter</code> を実行するエンジン。このモデルはアプリに含まれています）。LiteRT がまだスマートフォンにない場合は、背景ぼかしを初めて使うときに、Google Play services が LiteRT をダウンロードします。</li>
+</ul>
+<p>Google Play services はスマートフォンのシステムの一部で、ほかのアプリやスマートフォンの機能でも使われるため、これらのコンポーネントがすでに入っていたり、独自にダウンロードしたりすることがあります。こうしたダウンロードは Delantrás によるものではありません。アプリは、「オンにする」を選ぶまで、これらのライブラリをどちらも使いません。</p>
+<p>画像はスマートフォン内で処理され、<strong>Google には送信されません</strong>。ただし、これらのライブラリは使用時に、次の情報を暗号化して Google に送信します。</p>
+<ul>
+<li>デバイスのデータ（メーカー、機種、Android のバージョン、利用できるアクセラレータ）とアプリのデータ（パッケージ名とバージョン）</li>
+<li>このインストールとデバイスの識別子</li>
+<li>パフォーマンスと利用状況の指標、設定（画像の形式や解像度など）、入力と出力のサイズ、イベントの種類、エラーコード</li>
+</ul>
+<p>Google によると、Google はこれらの情報を、これらのライブラリの測定、維持、修正、改善と、不正利用の検出に使い、ML Kit はこれらの情報を第三者に渡しません。LiteRT は、修正、更新されたモデル、スマートフォンのハードウェアとの互換性データを受け取るために、Google に接続することもあります。</p>
+<p>詳しい情報：</p>
+<ul>
+<li>ML Kit のデータ：<a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>ML Kit の利用規約：<a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>Google Play services の LiteRT：<a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Google のプライバシーポリシー：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>ご自身の選択</strong>：これらの機能のどれかを初めて使うとき、アプリがここに書いたことをすべて説明し、確認します。「オンにする」を選ぶと、ライブラリが読み込まれます。「今はしない」を選ぶと、ライブラリは読み込まれず、この3つの機能はオフのままになり、カメラのほかの機能は今までどおり使えます。<em>設定 → プライバシー → レタッチ、笑顔撮影、背景</em> でいつでも変更できます。</p>
+<p><strong>メーカーの効果</strong>：一部のスマートフォンには、独自のカメラ効果（夜景、HDR、ポートレート、顔のレタッチ）があります。これらを選んだ場合、効果をかけるのは Google のライブラリではなく、お使いのスマートフォンのカメラのソフトウェアで、処理はスマートフォン自体の中で行われます。</p>
+<h2>5. 法的根拠</h2>
+<ul>
+<li><strong>ご依頼いただいたサービスの提供</strong>（一般データ保護規則（GDPR）第6条第1項(b)）：写真と動画の撮影と保存、動画の音声の録音、フィルターとレタッチの適用、選んだ機能のためのスマートフォン内での画像の分析。いずれもスマートフォン内で行います。</li>
+<li><strong>同意</strong>（GDPR 第6条第1項(a)、および Ley 34/2002（LSSI-CE：情報社会サービス及び電子商取引に関するスペインの法律）第22条第2項）：<ul>
+<li>レタッチ、笑顔撮影、背景ぼかしを使うときに、Google のライブラリが送信する技術的な統計について（第4項を参照）</li>
+<li>広告の SDK がスマートフォンに情報を保存したり読み取ったりすること、および<strong>パーソナライズド広告</strong>を表示することについて。この同意は、欧州経済領域（EEA）、英国、スイスで、Google のフォームを通じてお願いしています。同意しない場合、Google は、パーソナライズされていない制限付きの広告を表示することがあります。広告の効果測定と不正防止のために、Google とそのパートナーは正当な利益を根拠にしていますが、同じフォームで異議を申し立てることができます。</li>
+</ul></li>
+<li><strong>正当な利益</strong>（GDPR 第6条第1項(f)）：お送りいただいたメールへの返信。</li>
+</ul>
+<h2>6. 広告（Google AdMob）とサードパーティの SDK</h2>
+<p><strong>広告</strong>：このアプリは「あなたの写真」の中でだけ広告を表示し、カメラのファインダーには決して表示しません。広告の表示と、初めて「あなたの写真」を開いたときの同意の確認には、<strong>Google Mobile Ads SDK</strong>（AdMob）と <strong>Google のユーザー メッセージング プラットフォーム</strong>（UMP）を使用します。これらの SDK は、広告の表示と効果測定、分析、不正防止のために、次の情報を独自に収集し、Google と共有します。</p>
+<ul>
+<li><strong>IP アドレス</strong>（ここから<strong>おおよその位置</strong>が推測されます）</li>
+<li><strong>デバイスの識別子</strong>：広告 ID と app set ID</li>
+<li><strong>アプリや広告の操作</strong>（開く、タップするなど）</li>
+<li><strong>診断情報</strong>（アプリと SDK のパフォーマンス）</li>
+</ul>
+<p>アプリが広告のリクエストに、写真、動画、顔に関するものを加えることはありません。</p>
+<p>広告の表示と効果測定のため、Google の広告 SDK（AdMob）は、このポリシーで説明しているとおり、デバイスの識別子を収集します。米国の一部のプライバシー法では、これが個人データの「販売」または「共有」とみなされる場合があります（第13項「米国にお住まいの方」を参照）。</p>
+<p>詳しい情報：<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>正確な位置情報</strong>：広告の同意メッセージは、Google がすべての広告パートナーに共通の文面で表示するものであるため、正確な位置情報に触れています。このアプリには位置情報の権限がなく、GPS の位置情報を SDK に渡すこともありません。Google によると、Google の広告 SDK が使うのは、IP アドレスから推測されるおおよその位置情報だけです。この利用は「オプションを管理」で拒否できます。</p>
+<p><strong>Firebase Remote Config</strong>：アプリに含まれていますが、オフになっています。オンにならない限り、何も送信しません。いつかオンにする場合は、このポリシーにそのことを記載します。</p>
+<p><strong>Google Play</strong>：「アプリを評価」と、アプリ内での評価のお願いには、Google Play の評価機能を使います。評価を受け取るのは私たちではなく Google Play で、Google Play 独自の条件が適用されます。</p>
+<h2>7. 国際的なデータ移転</h2>
+<p>Google LLC は、同社の SDK とライブラリが収集したデータを米国で処理することがあります。Google LLC は、<strong>EU-米国データプライバシーフレームワーク</strong>（Data Privacy Framework）、その<strong>英国拡張</strong>、および<strong>スイス-米国データプライバシーフレームワーク</strong>に参加しており、さらに標準契約条項も使用しています。</p>
+<p>私たちのメールは Google（Gmail）が提供しており、同じ保護措置が適用されます。</p>
+<h2>8. 同意の撤回とデータの管理</h2>
+<ul>
+<li><strong>レタッチ、笑顔撮影、背景ぼかし</strong>：<em>設定 → プライバシー → レタッチ、笑顔撮影、背景</em> で変更できます。オフにすると、Google のライブラリは使われなくなり、これらの機能もオフになります。すでに送信されたものは、Google が自社のポリシーに従って取り扱います。</li>
+<li><strong>広告</strong>：アプリの <em>設定 → プライバシー → 広告のプライバシー設定</em>（法律で求められる地域、つまり EEA、英国、スイス、米国の一部の州で表示されます）。ここで、同意したときと同じくらい簡単に、同意を撤回したり、正当な利益に異議を申し立てたりできます。また、スマートフォンの Google の設定で、広告 ID をリセットまたは削除することもできます。</li>
+<li><strong>マイクとカメラ</strong>：Android の設定で、アプリの権限を取り消すことができます。</li>
+<li><strong>写真と動画</strong>：「あなたの写真」またはギャラリーから削除してください。デュアルの元データは、<em>設定 → プライバシー</em> で削除するか、アプリをアンインストールすると削除されます。ギャラリーの写真と動画は、アプリをアンインストールしても削除されません。</li>
+</ul>
+<h2>9. バックアップと機種変更</h2>
+<p>Android のクラウドへのバックアップ（Google アカウントへのバックアップ）は、このアプリのデータについてはオフになっており、何もアップロードされません。Android は、再インストールできるように、インストールしていたアプリの一覧をアカウントに保存しますが、この一覧は Google が管理するもので、アプリのデータは含まれません。写真と動画はアプリの中ではなく、スマートフォンのギャラリーにあります（第2項を参照）。</p>
+<p>新しいスマートフォンを設定するときに、ケーブルを使って、またはワイヤレスで、古いスマートフォンからデータを直接コピーすると、アプリの設定が新しいスマートフォンに移ることがあります。この移行はご自身が依頼するもので、Android が、Android またはスマートフォンのメーカーのツールを使い、それぞれの条件のもとで行います。Android のドキュメントによると、データはサーバーを経由せず、スマートフォンからスマートフォンへ移ります。いずれにしても、私たちのサーバーを経由することはありません。JR Soft はデータを一切受け取りません。</p>
+<p>移行が行われるかどうかは Android のバージョンとメーカーによって異なるため（Android 8 以前では行われません）、保証はできません。古いスマートフォンを使わずに、Google アカウントのバックアップから新しいスマートフォンを設定した場合、このアプリのデータは戻りません。そのバックアップに含まれていないためです。</p>
+<p>古いスマートフォンでしか意味のないものは移行されません。デュアルの元データ、SDK の識別子、そして広告と第4項の Google のライブラリについての選択です。新しいスマートフォンでは、アプリがもう一度確認します。</p>
+<h2>10. 未成年者</h2>
+<p>このアプリは16歳未満の方を対象としていません。パーソナライズド広告と Google のライブラリの統計には同意が必要ですが、EU では、この年齢未満の未成年者は自分だけで同意することができません（GDPR 第8条。スペインでは14歳：LOPDGDD（個人データ保護及びデジタル権利の保障に関するスペインの組織法）第7条）。</p>
+<h2>11. 保存期間</h2>
+<ul>
+<li>写真、動画、設定は、削除するかアプリをアンインストールするまで、スマートフォンに保存されます（ギャラリーの写真と動画は、アプリをアンインストールしても残ります）。</li>
+<li>カメラの映像、顔の特徴点、シルエットは保存されません。フレームごとに破棄されます。</li>
+<li>お送りいただいたメールは、返信に必要な期間、最長で最後の返信から1年間保存します。</li>
+<li>SDK と Google のライブラリが収集するデータは、Google のポリシーに従って保存されます。</li>
+</ul>
+<h2>12. あなたの権利</h2>
+<p>私たちにご連絡いただくことで、アクセス、訂正、削除、異議申立て、処理の制限、データポータビリティの各権利を行使できます。また、第8項で説明するとおり、ご自身が行った同意はいつでも撤回できます。撤回しても、それ以前に行われた処理には影響しません。私たちは写真や動画を受け取らないため、これらの権利のほとんどは、スマートフォンで直接行使できます（撮ったものを見る、削除する、共有する）。同社の SDK とライブラリが収集するデータについては、Google が <a href="https://myaccount.google.com">https://myaccount.google.com</a> と <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> で対応します。</p>
+<p>私たちがデータを適切に取り扱わなかったとお考えの場合は、Agencia Española de Protección de Datos（スペインデータ保護庁、www.aepd.es）、またはお住まいの国、お勤めの国、問題が起きた国のデータ保護機関に苦情を申し立てることができます。</p>
+<h2>13. 米国にお住まいの方</h2>
+<p>独自のプライバシー法がある米国の州（カリフォルニア州、コロラド州、コネチカット州、テキサス州、バージニア州など）にお住まいの場合は、個人データを販売しないこと、またターゲティング広告のために共有しないことを求める権利があります。アプリの <em>設定 → プライバシー → 広告のプライバシー設定</em> → 「Don't sell or share my data」から手続きできます。それ以降は、パーソナライズされていない広告のみが表示されます。このアプリは、センシティブなデータを誰にも送信しません。写真、動画、顔のデータは、スマートフォンの中にとどまります。広告のために、Google の SDK はデバイスの識別子とおおよその位置情報（市区町村レベル）を使用します。データに関するその他のご依頼は、<a href="mailto:demual@gmail.com">demual@gmail.com</a> までご連絡ください。</p>
+<h2>14. 変更</h2>
+<p>このポリシーを変更する場合は、Google Play のアプリのリリースノートでお知らせし、冒頭の日付を更新します。現在使っていないデータが新しい機能に必要になる場合（たとえば、写真に位置情報を保存する場合）は、その機能をオンにする前にアプリ内で説明し、ここに追記します。</p>
+<h2>15. 責任者と連絡先</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

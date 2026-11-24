@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Delantrás 隐私政策</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Delantrás 隐私政策</h1>
+<p>最后更新：2026年11月24日</p>
+<p>Delantrás 是 JR Soft（以下称“我们”）推出的一款应用，用于用手机拍摄照片和视频：可以同时（或先后）使用前置镜头和后置镜头，可以使用手动控制，也可以当作带滤镜和修饰功能的自拍相机。</p>
+<h2>1. 摘要</h2>
+<ul>
+<li><strong>您的照片和视频保留在您的手机上</strong>。无需账号，也无需注册，我们也没有任何服务器接收您的照片、视频或您在应用中进行的任何操作。</li>
+<li><strong>您的面部信息不会离开手机</strong>。修饰、微笑拍照和背景虚化都在手机本机上分析图像，不保存您的面部数据，也不识别任何人（见第4节）。</li>
+<li>这三项功能使用会向 Google 发送技术统计信息的 <strong>Google 库</strong>。因此，只有在您同意后才会开启，您也可以随时更改（见第4节）。</li>
+<li>应用会显示 <strong>Google AdMob 广告</strong>，且只在“你的照片”中显示。为此，Google 的 SDK 会自行收集部分设备数据（见第6节）。</li>
+<li>应用<strong>没有位置信息权限</strong>，也不会记录您拍照的地点。只有广告 SDK 会根据 IP 地址推断大致位置（见第6节）。</li>
+<li>我们不使用任何<strong>自有的</strong>分析工具。</li>
+<li>我们只会收到您通过电子邮件写给我们的内容。</li>
+</ul>
+<h2>2. 应用处理哪些数据，以及在哪里处理</h2>
+<div class="tabla"><table>
+<thead><tr><th>数据</th><th>存放位置</th><th>用途</th></tr></thead>
+<tbody>
+<tr><td>您拍摄的照片和视频</td><td>仅在您的手机上，存放在相册中（<code>DCIM/Delantras</code> 文件夹）</td><td>让应用正常运行：拍摄、保存并向您展示您的照片和视频</td></tr>
+<tr><td>每张双摄照片或每段双摄视频的两张原始照片或两段原始视频</td><td>仅在您的手机上，存放在应用的私有文件夹中（如果您开启“双摄原图存入相册”，也会存放在 <code>DCIM/Delantras/Originales</code>）</td><td>以便之后在“你的照片”中重新排版双摄作品。您可以在 <em>设置 → 隐私</em> 中删除它们</td></tr>
+<tr><td>视频的声音</td><td>在视频本身之中，存放在您的手机上</td><td>录制带声音的视频</td></tr>
+<tr><td>您使用修饰、微笑拍照或背景虚化时的相机画面</td><td>在手机内存中逐帧分析，不会保存</td><td>应用修饰、构图、在您微笑时拍照，以及把您和背景分开（见第4节）</td></tr>
+<tr><td>提词器的文稿</td><td>仅在您的手机上</td><td>在您录制时向您显示</td></tr>
+<tr><td>设置（闪光灯、滤镜、专业模式、修饰、您的隐私选择等）</td><td>仅在您的手机上</td><td>记住您的偏好</td></tr>
+<tr><td>SIM 卡所属的国家；如果没有 SIM 卡，则为系统语言对应的国家</td><td>在手机上读取，无需特殊权限，且不会离开手机</td><td>在“JR Soft 的更多应用”中只显示您所在国家/地区可用的应用</td></tr>
+<tr><td>如果您给我们发消息：您的电子邮件地址和您写给我们的内容</td><td>在我们的电子邮箱中</td><td>回复您</td></tr>
+</tbody></table></div>
+<p><strong>分享</strong>：当您分享照片或视频时，是您自己通过 Android 菜单把它发送到您选择的应用。开启“分享时不含位置信息”（默认开启）后，照片会以副本的形式发出，不含位置信息、手机的品牌和型号以及其他隐藏数据；视频则不含位置信息（Android 12 或更高版本）。您相册中的原始照片不会被改动。</p>
+<p><strong>您的相册</strong>：照片和视频保存在手机的普通相册中。如果您开启了相册的云端备份（例如 Google 相册或手机厂商的备份），该服务也会按照其自身的条款复制这些照片和视频。这不取决于 Delantrás。</p>
+<h2>3. 权限</h2>
+<ul>
+<li><strong>相机</strong>：用于拍摄照片和视频。在打开取景器时请求。</li>
+<li><strong>麦克风</strong>：仅用于视频的声音。在您第一次录像时请求。如果您不授予此权限，视频将在没有声音的情况下录制。除此之外，应用在任何时候都不会收听或录制声音。</li>
+<li><strong>存储</strong>：仅在 Android 8 和 9 上需要，用于保存到相册。从 Android 10 起不再需要。</li>
+<li><strong>广告 ID</strong>：由广告 SDK 使用（见第6节）。</li>
+</ul>
+<p>应用<strong>不会请求</strong>位置、通讯录或读取您照片的权限：“你的照片”只显示您用 Delantrás 拍摄的内容。</p>
+<h2>4. 自拍相机：修饰、微笑拍照和背景虚化</h2>
+<p><strong>一切都在手机上处理</strong>。修饰（皮肤、光线和眼下阴影）、微笑拍照和背景虚化<strong>仅在您的手机上</strong>分析相机画面，逐帧在内存中进行。</p>
+<p><strong>面部特征点和轮廓</strong>：为了确定修饰的位置和构图，应用会定位面部的一些特征点（脸部轮廓、眼睛和嘴巴）。为了背景虚化，应用会计算人物的轮廓。</p>
+<ul>
+<li><strong>不会保存</strong>：每一帧处理后即丢弃。</li>
+<li><strong>不会用于识别任何人</strong>，也不会与其他人脸进行比对。</li>
+<li><strong>不会推断</strong>任何人的性别、年龄、出身或情绪。</li>
+<li>检测微笑仅用于拍照。</li>
+</ul>
+<p><strong>不发送任何内容</strong>。您的照片、视频、相机画面、面部特征点和轮廓都不会发送给 JR Soft 或任何人。</p>
+<p><strong>Google 库</strong>：这些功能使用 Google LLC 的两个库，它们随 Google Play services 来到您的手机上：</p>
+<ul>
+<li><strong>ML Kit</strong>（人脸检测）。如果您的手机上还没有它的模型，Google Play services 会在您选择“开启”之后、第一次使用修饰或微笑拍照时下载。</li>
+<li><strong>LiteRT</strong>（运行轮廓模型 <code>selfie_segmenter</code> 的引擎，该模型内置在应用中）。如果您的手机上还没有 LiteRT，Google Play services 会在您第一次使用背景虚化时下载 LiteRT。</li>
+</ul>
+<p>Google Play services 是手机系统的一部分，由于其他应用和手机功能也会用到这些组件，它可能已经有这些组件，或者自行下载。这些下载不取决于 Delantrás：在您选择“开启”之前，应用不会使用其中任何一个库。</p>
+<p>图像在手机上处理，<strong>不会发送给 Google</strong>。但在使用时，这些库会以加密方式向 Google 发送：</p>
+<ul>
+<li>设备数据（制造商、型号、Android 版本和可用的加速器）和应用数据（软件包名称和版本）；</li>
+<li>本次安装和设备的标识符；</li>
+<li>性能和使用指标、配置（例如图像的格式和分辨率）、输入和输出的大小、事件类型和错误代码。</li>
+</ul>
+<p>据 Google 称，Google 将这些数据用于衡量、维护、修复和改进这些库，以及检测滥用行为，并且 ML Kit 不会将这些数据提供给第三方。LiteRT 还可能连接 Google，以接收修复、更新的模型以及与手机硬件兼容性相关的数据。</p>
+<p>更多信息：</p>
+<ul>
+<li>ML Kit 的数据：<a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>ML Kit 的条款：<a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>Google Play services 中的 LiteRT：<a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Google 隐私政策：<a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>您的选择</strong>：您第一次使用其中某项功能时，应用会向您说明以上全部内容并询问您。选择“开启”，就会加载这些库。选择“暂不”，就不会加载这些库，这三项功能保持关闭，相机的其他功能照常使用。您可以随时在 <em>设置 → 隐私 → 修饰、微笑拍照和背景</em> 中更改。</p>
+<p><strong>手机厂商的效果</strong>：有些手机提供自己的相机效果（夜景、HDR、人像或面部修饰）。当您选择这些效果时，是由您手机的相机软件在手机本机上应用，而不是由 Google 的库应用。</p>
+<h2>5. 法律依据</h2>
+<ul>
+<li><strong>履行您所请求的服务</strong>（《通用数据保护条例》（GDPR）第6条第1款(b)项）：拍摄和保存您的照片和视频、录制视频的声音、应用滤镜和修饰，以及为您选择的功能在手机上分析图像，这一切都在您的手机上进行。</li>
+<li><strong>同意</strong>（GDPR 第6条第1款(a)项，以及 Ley 34/2002（LSSI-CE，西班牙《信息社会服务和电子商务法》）第22条第2款）：<ul>
+<li>针对您使用修饰、微笑拍照或背景虚化时 Google 库发送的技术统计信息（见第4节）；</li>
+<li>针对广告 SDK 在您的手机上存储或读取信息，以及向您展示<strong>个性化广告</strong>。在欧洲经济区（EEA）、英国和瑞士，会通过 Google 的表单征求此同意。如果您不同意，Google 可能会向您展示有限的、非个性化的广告。为了衡量广告效果和防止欺诈，Google 及其合作伙伴以其正当利益为依据，您可以在同一表单中提出反对。</li>
+</ul></li>
+<li><strong>正当利益</strong>（GDPR 第6条第1款(f)项）：回复您发给我们的电子邮件。</li>
+</ul>
+<h2>6. 广告（Google AdMob）和第三方 SDK</h2>
+<p><strong>广告</strong>：应用只在“你的照片”中显示广告，绝不会在相机取景器中显示。应用使用 <strong>Google 移动广告 SDK（AdMob）</strong> 和 <strong>Google 用户消息平台（UMP）</strong> 来显示广告，并在您第一次进入“你的照片”时征求您的同意。为了展示和衡量广告、进行分析以及防止欺诈，这些 SDK 会自行收集以下数据并与 Google 共享：</p>
+<ul>
+<li><strong>IP 地址</strong>，从中可推断出<strong>大致位置</strong>；</li>
+<li><strong>设备标识符</strong>：广告 ID 和 app set ID；</li>
+<li>您<strong>与应用和广告的互动</strong>（例如打开和点按）；</li>
+<li><strong>诊断信息</strong>（应用和 SDK 的性能）。</li>
+</ul>
+<p>应用不会在广告请求中添加任何有关您的照片、视频或面部的内容。</p>
+<p>为了展示和衡量广告，Google 的广告 SDK（AdMob）会收集设备标识符，如本政策所述。美国的一些隐私法律可能将此视为“出售”或“共享”个人数据（见第13节“美国居民”）。</p>
+<p>更多信息：<a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>精确地理位置</strong>：广告的同意消息由 Google 显示，使用的是其所有广告合作伙伴共用的文字，因此会提到精确地理位置。本应用没有位置权限，也不会将 GPS 位置传给 SDK。据 Google 称，其广告 SDK 只使用根据 IP 地址推断出的大致位置。您可以在“管理选项”中拒绝这种使用。</p>
+<p><strong>Firebase Remote Config</strong>：应用包含它，但处于停用状态：在启用之前不会发送任何内容。如果将来启用，本政策会予以说明。</p>
+<p><strong>Google Play</strong>：“给应用评分”和应用内的评分请求使用 Google Play 的评分功能。您的评分由 Google Play 按其自身条款接收，而不是由我们接收。</p>
+<h2>7. 国际传输</h2>
+<p>Google LLC 可能会在美国处理其 SDK 和库收集的数据。Google LLC 已加入<strong>欧盟-美国数据隐私框架</strong>（Data Privacy Framework）、其<strong>英国扩展</strong>以及<strong>瑞士-美国数据隐私框架</strong>，并且还使用标准合同条款。</p>
+<p>我们的电子邮件由 Google（Gmail）提供，具有同样的保障措施。</p>
+<h2>8. 如何撤回同意并控制您的数据</h2>
+<ul>
+<li><strong>修饰、微笑拍照和背景虚化</strong>：在 <em>设置 → 隐私 → 修饰、微笑拍照和背景</em> 中。关闭后，将不再使用 Google 的库，这些功能也会关闭。已经发送的内容由 Google 按其政策处理。</li>
+<li><strong>广告</strong>：在应用中，<em>设置 → 隐私 → 广告隐私选项</em>（在法律要求的地区显示：EEA、英国、瑞士和美国的部分州）。您可以在那里撤回同意或反对正当利益，就像当初给予同意一样容易。您也可以在手机的 Google 设置中重置或删除广告 ID。</li>
+<li><strong>麦克风和相机</strong>：您可以在 Android 设置中撤销应用的权限。</li>
+<li><strong>您的照片和视频</strong>：从“你的照片”或相册中删除它们。双摄原片可在 <em>设置 → 隐私</em> 中删除，或在卸载应用时删除。相册中的照片和视频不会因卸载应用而被删除。</li>
+</ul>
+<h2>9. 备份和更换手机</h2>
+<p>Android 的云端备份（您 Google 账号中的备份）已对本应用的数据停用：不会上传任何数据。Android 确实会在您的账号中保存您已安装应用的列表，以便重新安装，但这个列表由 Google 管理，不包含本应用的数据。您的照片和视频在手机相册中，而不在应用内部（见第2节）。</p>
+<p>如果您在设置新手机时直接从旧手机复制数据（无论是否使用数据线），本应用的设置可能会转移到新手机上。这种转移由您发起，由 Android 使用其自带工具或手机厂商的工具，按其自身条款进行。根据 Android 的文档，数据从一部手机传到另一部手机，不经过服务器。无论如何都不会经过我们的服务器：JR Soft 不会收到任何数据。</p>
+<p>是否进行转移取决于 Android 版本和手机厂商（Android 8 或更早版本不会进行），因此我们无法保证。如果您不使用旧手机，而是通过 Google 账号中的备份来设置新手机，本应用的数据不会恢复，因为它们不在该备份中。</p>
+<p>只在旧手机上有用的内容不会转移：双摄原片、SDK 的标识符，以及您对广告和第4节所述 Google 库的选择。在新手机上，应用会再次询问您。</p>
+<h2>10. 未成年人</h2>
+<p>本应用不面向16岁以下的未成年人。个性化广告和 Google 库的统计信息需要征得同意，而在欧盟，未满该年龄的未成年人不能自行给予同意（GDPR 第8条；在西班牙为14岁，LOPDGDD（西班牙《个人数据保护和数字权利保障组织法》）第7条）。</p>
+<h2>11. 保存期限</h2>
+<ul>
+<li>您的照片、视频和设置会保存在您的手机上，直到您删除它们或卸载应用（即使卸载应用，相册中的照片和视频也仍然保留）。</li>
+<li>相机画面、面部特征点和轮廓不会保存：每一帧处理后即丢弃。</li>
+<li>您发给我们的电子邮件，保存至回复您所需的时间，最长自最后一次回复起一年。</li>
+<li>SDK 和 Google 的库收集的数据按 Google 的政策保存。</li>
+</ul>
+<h2>12. 您的权利</h2>
+<p>您可以通过写信给我们，行使访问、更正、删除、反对、限制处理和可携带的权利。您也可以随时撤回已给予的同意，方法见第8节；撤回同意不影响此前已进行的处理。由于我们不会收到您的照片和视频，其中大部分权利您可以直接在手机上行使（查看、删除或分享您拍摄的内容）。对于其 SDK 和库收集的数据，Google 会在 <a href="https://myaccount.google.com">https://myaccount.google.com</a> 和 <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a> 为您处理。</p>
+<p>如果您认为我们没有妥善处理您的数据，可以向 Agencia Española de Protección de Datos（西班牙数据保护局，www.aepd.es）投诉，或者向您居住地、工作地或问题发生地所在国家的数据保护机构投诉。</p>
+<h2>13. 美国居民</h2>
+<p>如果您居住在拥有自己隐私法律的美国州（例如加利福尼亚州、科罗拉多州、康涅狄格州、得克萨斯州或弗吉尼亚州），您有权要求不出售您的个人数据，也不为定向广告而共享您的个人数据。您可以在应用中进行设置：<em>设置 → 隐私 → 广告隐私选项</em> → “Don't sell or share my data”。此后，您只会看到非个性化广告。应用不会向任何人发送敏感数据：您的照片、视频和面部数据都保留在您的手机上。为了展示广告，Google 的 SDK 会使用设备标识符和大致位置（城市级别）。如有关于您数据的任何其他请求，请发送电子邮件至 <a href="mailto:demual@gmail.com">demual@gmail.com</a>。</p>
+<h2>14. 变更</h2>
+<p>如果本政策发生变更，我们会在 Google Play 上应用的版本说明中注明，并更改上方的日期。如果某项新功能需要使用目前未使用的数据（例如在照片中保存位置），我们会在启用前在应用中向您说明，并在此处补充。</p>
+<h2>15. 负责人和联系方式</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>

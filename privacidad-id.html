@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="id" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Kebijakan privasi Delantrás</title>
+<style>
+:root { color-scheme: light dark; --texto: #1d1b18; --fondo: #fbf8f3; --suave: #5d574e; --borde: #d9d2c5; --acento: #9a5b00; }
+@media (prefers-color-scheme: dark) { :root { --texto: #ece6dc; --fondo: #16130f; --suave: #b3ab9e; --borde: #3b352c; --acento: #f2b04a; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans", sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; margin: 0.5rem 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 0.5rem; }
+h3 { font-size: 1.05rem; margin: 1.5rem 0 0.5rem; }
+a { color: var(--acento); overflow-wrap: anywhere; }
+ul { padding-inline-start: 1.4rem; }
+li { margin: 0.25rem 0; }
+code { font-family: ui-monospace, Consolas, monospace; font-size: 0.92em; overflow-wrap: anywhere; }
+.tabla { overflow-x: auto; margin: 1rem 0; }
+table { border-collapse: collapse; width: 100%; font-size: 0.95rem; }
+th, td { border: 1px solid var(--borde); padding: 0.4rem 0.6rem; text-align: start; vertical-align: top; }
+th { background: color-mix(in srgb, var(--borde) 40%, transparent); }
+nav { font-size: 0.9rem; color: var(--suave); margin-bottom: 1rem; }
+nav a { margin-inline-end: 0.6rem; }
+.idiomas { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr)); gap: 0.4rem; }
+.idiomas a { display: block; padding: 0.6rem 0.8rem; border: 1px solid var(--borde); border-radius: 0.6rem; text-decoration: none; }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Delantrás · Privacy / Privacidad</a></nav>
+<h1>Kebijakan privasi Delantrás</h1>
+<p>Pembaruan terakhir: 24 November 2026</p>
+<p>Delantrás adalah aplikasi dari JR Soft (selanjutnya disebut “kami”) untuk mengambil foto dan merekam video dengan ponsel: dengan kamera depan dan belakang sekaligus (atau satu setelah yang lain), dengan kontrol manual, dan sebagai kamera selfie, dengan filter dan retus.</p>
+<h2>1. Ringkasan</h2>
+<ul>
+<li><strong>Foto dan video Anda tetap di ponsel Anda.</strong> Tidak ada akun maupun pendaftaran, dan kami tidak memiliki server apa pun yang menerima foto, video, atau apa pun yang Anda lakukan di aplikasi.</li>
+<li><strong>Wajah Anda tidak keluar dari ponsel.</strong> Retus, pengambilan foto dengan senyum, dan pemburaman latar menganalisis gambar di ponsel itu sendiri, tanpa menyimpan data wajah Anda dan tanpa mengidentifikasi siapa pun (bagian 4).</li>
+<li>Ketiga fitur itu memakai <strong>pustaka Google</strong> yang mengirim statistik teknis ke Google. Karena itu, fitur-fitur ini hanya aktif jika Anda menyetujuinya, dan Anda bisa mengubahnya kapan saja (bagian 4).</li>
+<li>Aplikasi ini menampilkan <strong>iklan Google AdMob</strong>, hanya di “Foto Anda”. Untuk itu, SDK Google mengumpulkan sendiri beberapa data perangkat (bagian 6).</li>
+<li>Aplikasi ini <strong>tidak memiliki izin lokasi</strong> dan tidak menyimpan tempat Anda mengambil foto. Hanya SDK iklan yang menyimpulkan perkiraan lokasi dari alamat IP (bagian 6).</li>
+<li>Kami tidak memakai alat analitik <strong>milik kami sendiri</strong>.</li>
+<li>Kami hanya menerima apa yang Anda tulis kepada kami melalui email.</li>
+</ul>
+<h2>2. Data yang diproses aplikasi dan di mana</h2>
+<div class="tabla"><table>
+<thead><tr><th>Data</th><th>Tempat penyimpanan</th><th>Tujuan</th></tr></thead>
+<tbody>
+<tr><td>Foto dan video yang Anda ambil</td><td>Hanya di ponsel Anda, di galeri (folder <code>DCIM/Delantras</code>)</td><td>Agar aplikasi berfungsi: mengambil, menyimpan, dan menampilkan foto dan video Anda</td></tr>
+<tr><td>Dua foto atau video asli dari setiap foto atau video ganda</td><td>Hanya di ponsel Anda, di folder pribadi aplikasi (dan, jika Anda mengaktifkan “Asli ganda di galeri”, juga di <code>DCIM/Delantras/Originales</code>)</td><td>Agar foto ganda bisa disusun ulang nanti di “Foto Anda”. Anda bisa menghapusnya di <em>Setelan → Privasi</em></td></tr>
+<tr><td>Suara video</td><td>Di dalam video itu sendiri, di ponsel Anda</td><td>Merekam video dengan suara</td></tr>
+<tr><td>Gambar kamera saat Anda memakai retus, senyum, atau pemburaman latar</td><td>Dianalisis di memori ponsel, bingkai demi bingkai, dan tidak disimpan</td><td>Menerapkan retus, membingkai foto, memotret saat Anda tersenyum, dan memisahkan Anda dari latar (bagian 4)</td></tr>
+<tr><td>Naskah teleprompter</td><td>Hanya di ponsel Anda</td><td>Menampilkannya kepada Anda saat merekam</td></tr>
+<tr><td>Setelan (flash, filter, mode Pro, retus, pilihan privasi Anda…)</td><td>Hanya di ponsel Anda</td><td>Mengingat preferensi Anda</td></tr>
+<tr><td>Negara kartu SIM atau, jika tidak ada, negara dari bahasa sistem</td><td>Dibaca di ponsel, tanpa izin khusus, dan tidak keluar dari ponsel</td><td>Menampilkan di “Aplikasi lain dari JR Soft” hanya aplikasi yang tersedia di negara Anda</td></tr>
+<tr><td>Email Anda dan apa yang Anda tulis, jika Anda mengirimi kami pesan</td><td>Di email kami</td><td>Membalas Anda</td></tr>
+</tbody></table></div>
+<p><strong>Berbagi.</strong> Saat Anda membagikan foto atau video, Anda sendirilah yang mengirimkannya ke aplikasi yang Anda pilih di menu Android. Dengan “Bagikan tanpa lokasi” (aktif secara default), foto dikirim sebagai salinan tanpa lokasi, tanpa merek dan model ponsel, serta tanpa data tersembunyi lainnya, dan video dikirim tanpa lokasi (di Android 12 atau yang lebih baru). Foto asli di galeri Anda tidak diubah.</p>
+<p><strong>Galeri Anda.</strong> Foto dan video disimpan di galeri biasa ponsel. Jika Anda mengaktifkan pencadangan galeri ke cloud (misalnya Google Foto atau layanan dari produsen ponsel), layanan itu juga akan menyalinnya, dengan ketentuannya sendiri. Hal itu tidak bergantung pada Delantrás.</p>
+<h2>3. Izin</h2>
+<ul>
+<li><strong>Kamera:</strong> untuk mengambil foto dan video. Diminta saat Anda membuka jendela bidik.</li>
+<li><strong>Mikrofon:</strong> hanya untuk suara video. Diminta saat Anda merekam untuk pertama kalinya. Jika Anda tidak memberikannya, video direkam tanpa suara. Aplikasi ini tidak mendengarkan atau merekam suara pada saat lain mana pun.</li>
+<li><strong>Penyimpanan:</strong> hanya di Android 8 dan 9, untuk menyimpan ke galeri. Sejak Android 10 izin ini tidak diperlukan.</li>
+<li><strong>ID iklan:</strong> dipakai oleh SDK iklan (bagian 6).</li>
+</ul>
+<p>Aplikasi ini <strong>tidak meminta</strong> izin lokasi, kontak, atau izin membaca foto Anda: “Foto Anda” hanya menampilkan apa yang telah Anda buat dengan Delantrás.</p>
+<h2>4. Kamera selfie: retus, senyum, dan pemburaman latar</h2>
+<p><strong>Semuanya diproses di ponsel.</strong> Retus (kulit, cahaya, dan bayangan di bawah mata), pengambilan foto saat tersenyum, dan pemburaman latar menganalisis gambar kamera <strong>hanya di ponsel Anda</strong>, bingkai demi bingkai dan di memori.</p>
+<p><strong>Titik wajah dan siluet.</strong> Untuk menempatkan retus dan membingkai foto, aplikasi menemukan beberapa titik wajah (kontur, mata, dan mulut). Untuk pemburaman, aplikasi menghitung siluet orang.</p>
+<ul>
+<li><strong>Tidak disimpan</strong>: dibuang di setiap bingkai.</li>
+<li><strong>Tidak dipakai untuk mengidentifikasi siapa pun</strong> dan tidak dibandingkan dengan wajah lain.</li>
+<li><strong>Tidak disimpulkan</strong> jenis kelamin, usia, asal-usul, maupun emosi siapa pun.</li>
+<li>Senyum hanya dideteksi untuk mengambil foto.</li>
+</ul>
+<p><strong>Tidak ada yang dikirim.</strong> Foto, video, gambar kamera, titik wajah, maupun siluet Anda tidak dikirim ke JR Soft ataupun kepada siapa pun.</p>
+<p><strong>Pustaka Google.</strong> Fitur-fitur ini memakai dua pustaka dari Google LLC yang sampai ke ponsel Anda melalui Google Play services:</p>
+<ul>
+<li><strong>ML Kit</strong> (deteksi wajah). Jika modelnya belum ada di ponsel Anda, Google Play services mengunduhnya saat Anda pertama kali memakai retus atau senyum, setelah “Aktifkan”.</li>
+<li><strong>LiteRT</strong> (mesin yang menjalankan model siluet, <code>selfie_segmenter</code>, yang disertakan di dalam aplikasi). Jika belum ada di ponsel Anda, Google Play services mengunduh LiteRT saat Anda pertama kali memakai pemburaman latar.</li>
+</ul>
+<p>Google Play services adalah bagian dari sistem ponsel dan mungkin sudah memiliki komponen ini atau mengunduhnya sendiri, karena aplikasi dan fitur ponsel lain juga memakainya. Unduhan tersebut tidak bergantung pada Delantrás: aplikasi tidak memakai satu pun dari pustaka ini sampai Anda memilih “Aktifkan”.</p>
+<p>Gambar diproses di ponsel dan <strong>tidak dikirim ke Google</strong>. Namun, saat digunakan, pustaka-pustaka ini mengirimkan ke Google, dalam bentuk terenkripsi:</p>
+<ul>
+<li>data perangkat (produsen, model, versi Android, dan akselerator yang tersedia) dan data aplikasi (nama paket dan versi);</li>
+<li>ID penginstalan ini dan ID perangkat;</li>
+<li>metrik kinerja dan penggunaan, konfigurasi (misalnya format dan resolusi gambar), ukuran input dan output, jenis peristiwa, dan kode galat.</li>
+</ul>
+<p>Menurut Google, data ini dipakainya untuk mengukur, memelihara, memperbaiki, dan meningkatkan pustaka-pustaka ini, serta untuk mendeteksi penyalahgunaan, dan ML Kit tidak memberikannya kepada pihak ketiga. LiteRT juga dapat terhubung ke Google untuk menerima perbaikan, model yang diperbarui, dan data kompatibilitas dengan perangkat keras ponsel.</p>
+<p>Informasi selengkapnya:</p>
+<ul>
+<li>Data ML Kit: <a href="https://developers.google.com/ml-kit/android-data-disclosure">https://developers.google.com/ml-kit/android-data-disclosure</a></li>
+<li>Ketentuan ML Kit: <a href="https://developers.google.com/ml-kit/terms">https://developers.google.com/ml-kit/terms</a></li>
+<li>LiteRT di Google Play services: <a href="https://developers.google.com/edge/litert/android/play_services">https://developers.google.com/edge/litert/android/play_services</a></li>
+<li>Kebijakan privasi Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+</ul>
+<p><strong>Pilihan Anda.</strong> Saat pertama kali Anda memakai salah satu fitur ini, aplikasi menjelaskan semua ini dan menanyakannya kepada Anda. Dengan “Aktifkan”, pustaka dimuat. Dengan “Jangan sekarang”, pustaka tidak dimuat, ketiga fitur itu tetap mati, dan bagian kamera lainnya berfungsi seperti biasa. Anda bisa mengubahnya kapan saja di <em>Setelan → Privasi → Retus, senyum, dan latar</em>.</p>
+<p><strong>Efek dari produsen.</strong> Beberapa ponsel menawarkan efek kamera sendiri (Malam, HDR, Potret, atau Retus wajah). Saat Anda memilihnya, efek itu diterapkan oleh perangkat lunak kamera ponsel Anda, di ponsel itu sendiri, bukan oleh pustaka Google.</p>
+<h2>5. Dasar hukum</h2>
+<ul>
+<li><strong>Pelaksanaan layanan yang Anda minta</strong> (Pasal 6.1.b GDPR): mengambil dan menyimpan foto dan video Anda, merekam suara video, menerapkan filter dan retus, serta menganalisis gambar di ponsel untuk fitur yang Anda pilih, semuanya di ponsel Anda.</li>
+<li><strong>Persetujuan</strong> (Pasal 6.1.a GDPR dan Pasal 22.2 Ley 34/2002, LSSI-CE, undang-undang Spanyol tentang layanan masyarakat informasi dan perdagangan elektronik):<ul>
+<li>untuk statistik teknis yang dikirim pustaka Google saat Anda memakai retus, senyum, atau pemburaman latar (bagian 4);</li>
+<li>agar SDK iklan dapat menyimpan atau membaca informasi di ponsel Anda dan untuk menampilkan <strong>iklan yang dipersonalisasi</strong> kepada Anda. Persetujuan ini diminta melalui formulir Google di Kawasan Ekonomi Eropa, Inggris, dan Swiss. Jika Anda tidak memberikannya, Google dapat menampilkan iklan terbatas yang tidak dipersonalisasi. Untuk mengukur iklan tersebut dan mencegah penipuan, Google dan mitranya mengandalkan kepentingan sah mereka, dan Anda dapat mengajukan keberatan atasnya di formulir yang sama.</li>
+</ul></li>
+<li><strong>Kepentingan sah</strong> (Pasal 6.1.f GDPR): membalas email yang Anda kirimkan kepada kami.</li>
+</ul>
+<h2>6. Iklan (Google AdMob) dan SDK pihak ketiga</h2>
+<p><strong>Iklan.</strong> Aplikasi ini hanya menampilkan iklan di “Foto Anda”, tidak pernah di jendela bidik kamera. Aplikasi ini memakai <strong>Google Mobile Ads SDK (AdMob)</strong> dan <strong>platform pesan pengguna Google (UMP)</strong> untuk menampilkan iklan dan meminta persetujuan Anda saat pertama kali Anda membuka “Foto Anda”. SDK ini mengumpulkan sendiri, dan membagikan kepada Google, untuk menampilkan dan mengukur iklan, melakukan analitik, dan mencegah penipuan:</p>
+<ul>
+<li><strong>alamat IP</strong>, yang darinya disimpulkan <strong>perkiraan lokasi</strong>;</li>
+<li><strong>ID perangkat</strong>: ID iklan dan app set ID;</li>
+<li><strong>interaksi Anda dengan aplikasi dan iklan</strong> (misalnya, membuka dan mengetuk);</li>
+<li><strong>diagnostik</strong> (kinerja aplikasi dan SDK).</li>
+</ul>
+<p>Aplikasi ini tidak menambahkan apa pun dari foto, video, maupun wajah Anda ke permintaan iklan.</p>
+<p>Untuk menampilkan dan mengukur iklan, SDK iklan Google (AdMob) mengumpulkan ID perangkat, seperti yang dijelaskan dalam kebijakan ini. Beberapa undang-undang privasi di AS dapat menganggap hal itu sebagai “menjual” atau “membagikan” data pribadi (lihat bagian 13, “Penduduk AS”).</p>
+<p>Informasi selengkapnya: <a href="https://policies.google.com/technologies/partner-sites">https://policies.google.com/technologies/partner-sites</a></p>
+<p><strong>Geolokasi akurat.</strong> Pesan persetujuan iklan ditampilkan oleh Google dengan teks yang sama untuk semua mitra periklanannya, dan karena itu pesan tersebut menyebutkan geolokasi akurat. Aplikasi ini tidak memiliki izin lokasi dan tidak meneruskan lokasi GPS ke SDK. Menurut Google, SDK iklannya hanya memakai perkiraan lokasi yang disimpulkan dari alamat IP. Anda dapat menolak penggunaan tersebut di “Kelola opsi”.</p>
+<p><strong>Firebase Remote Config.</strong> Aplikasi ini menyertakannya dalam keadaan nonaktif: tidak mengirim apa pun selama belum diaktifkan. Jika suatu hari diaktifkan, kebijakan ini akan menyebutkannya.</p>
+<p><strong>Google Play.</strong> “Beri rating aplikasi” dan permintaan rating di dalam aplikasi memakai fitur rating Google Play. Rating Anda diterima oleh Google Play, dengan ketentuannya sendiri, bukan oleh kami.</p>
+<h2>7. Transfer data internasional</h2>
+<p>Google LLC dapat memproses data yang dikumpulkan oleh SDK dan pustakanya di Amerika Serikat. Google LLC tergabung dalam <strong>Kerangka Privasi Data UE-AS</strong> (Data Privacy Framework), <strong>perluasannya untuk Inggris</strong>, dan <strong>Kerangka Swiss-AS</strong>, serta juga menggunakan klausul kontrak standar.</p>
+<p>Email kami disediakan oleh Google (Gmail), dengan jaminan yang sama.</p>
+<h2>8. Cara menarik persetujuan dan mengendalikan data Anda</h2>
+<ul>
+<li><strong>Retus, senyum, dan pemburaman latar</strong>: di <em>Setelan → Privasi → Retus, senyum, dan latar</em>. Jika Anda mematikannya, pustaka Google tidak lagi digunakan dan fitur-fitur itu mati. Data yang sudah terkirim diproses Google sesuai kebijakannya.</li>
+<li><strong>Iklan</strong>: di aplikasi, <em>Setelan → Privasi → Opsi privasi iklan</em> (muncul di tempat yang diwajibkan oleh hukum: Kawasan Ekonomi Eropa, Inggris, Swiss, dan beberapa negara bagian AS). Di sana Anda dapat menarik persetujuan atau mengajukan keberatan atas kepentingan sah, semudah saat Anda memberikannya. Anda juga dapat mereset atau menghapus ID iklan di setelan Google ponsel Anda.</li>
+<li><strong>Mikrofon dan kamera</strong>: Anda dapat mencabut izin aplikasi di setelan Android.</li>
+<li><strong>Foto dan video Anda</strong>: hapus dari “Foto Anda” atau dari galeri. Asli foto ganda dihapus di <em>Setelan → Privasi</em> atau saat Anda meng-uninstal aplikasi. Foto dan video di galeri tidak terhapus saat Anda meng-uninstal aplikasi.</li>
+</ul>
+<h2>9. Cadangan dan ganti ponsel</h2>
+<p>Pencadangan Android ke cloud (pencadangan di Akun Google Anda) dinonaktifkan untuk data aplikasi ini: tidak ada data yang diunggah. Android memang menyimpan di akun Anda daftar aplikasi yang Anda instal, agar bisa diinstal ulang, tetapi daftar itu dikelola oleh Google dan tidak berisi data aplikasi. Foto dan video Anda berada di galeri ponsel, bukan di dalam aplikasi (bagian 2).</p>
+<p>Jika saat menyiapkan ponsel baru Anda menyalin data langsung dari ponsel lama, dengan atau tanpa kabel, setelan aplikasi Anda dapat berpindah ke ponsel baru. Pemindahan itu Anda sendiri yang memintanya dan Android yang melakukannya, dengan alatnya sendiri atau alat dari produsen ponsel dan dengan ketentuannya masing-masing. Menurut dokumentasi Android, data berpindah dari satu ponsel ke ponsel lain tanpa melewati server. Dalam keadaan apa pun data itu tidak melewati server kami: JR Soft tidak menerima data apa pun.</p>
+<p>Terjadi atau tidaknya pemindahan ini bergantung pada versi Android dan produsen (di Android 8 atau yang lebih lama tidak terjadi), jadi kami tidak dapat menjaminnya. Jika Anda menyiapkan ponsel baru dari cadangan Akun Google Anda, tanpa ponsel lama, data aplikasi ini tidak kembali, karena tidak ada di cadangan tersebut.</p>
+<p>Yang hanya berguna di ponsel lama tidak dipindahkan: asli foto ganda, ID SDK, serta pilihan Anda tentang iklan dan tentang pustaka Google di bagian 4. Di ponsel baru, aplikasi akan bertanya lagi kepada Anda.</p>
+<h2>10. Anak-anak</h2>
+<p>Aplikasi ini tidak ditujukan untuk anak di bawah 16 tahun. Iklan yang dipersonalisasi dan statistik pustaka Google memerlukan persetujuan yang tidak dapat diberikan sendiri oleh anak di bawah usia tersebut di Uni Eropa (Pasal 8 GDPR; 14 tahun di Spanyol, Pasal 7 LOPDGDD, undang-undang organik Spanyol tentang pelindungan data pribadi dan jaminan hak digital).</p>
+<h2>11. Penyimpanan</h2>
+<ul>
+<li>Foto, video, dan setelan Anda disimpan di ponsel Anda selama Anda tidak menghapusnya atau tidak meng-uninstal aplikasi (foto dan video di galeri tetap ada meskipun Anda meng-uninstal aplikasi).</li>
+<li>Gambar kamera, titik wajah, dan siluet tidak disimpan: semuanya dibuang di setiap bingkai.</li>
+<li>Email yang Anda kirimkan kepada kami disimpan selama diperlukan untuk membalas Anda dan paling lama satu tahun sejak balasan terakhir.</li>
+<li>Data yang dikumpulkan oleh SDK dan pustaka Google disimpan sesuai kebijakan Google.</li>
+</ul>
+<h2>12. Hak-hak Anda</h2>
+<p>Anda dapat menggunakan hak akses, perbaikan, penghapusan, keberatan, pembatasan, dan portabilitas dengan menulis kepada kami. Anda juga dapat menarik kapan saja persetujuan yang telah Anda berikan, seperti dijelaskan di bagian 8; penarikan tersebut tidak memengaruhi pemrosesan yang dilakukan sebelumnya. Karena kami tidak menerima foto maupun video Anda, sebagian besar hak tersebut Anda gunakan langsung di ponsel Anda (melihat, menghapus, atau membagikan apa yang telah Anda buat). Untuk data yang dikumpulkan oleh SDK dan pustakanya, Google melayani Anda di <a href="https://myaccount.google.com">https://myaccount.google.com</a> dan <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</p>
+<p>Jika menurut Anda kami tidak menangani data Anda dengan benar, Anda dapat mengajukan keluhan ke Agencia Española de Protección de Datos (Badan Pelindungan Data Spanyol, www.aepd.es) atau ke otoritas pelindungan data di negara tempat Anda tinggal, bekerja, atau tempat masalah itu terjadi.</p>
+<h2>13. Penduduk AS</h2>
+<p>Jika Anda tinggal di negara bagian AS yang memiliki undang-undang privasi sendiri (misalnya California, Colorado, Connecticut, Texas, atau Virginia), Anda berhak meminta agar data pribadi Anda tidak dijual atau dibagikan untuk iklan bertarget. Anda dapat melakukannya di aplikasi: <em>Setelan → Privasi → Opsi privasi iklan</em> → “Don't sell or share my data”. Sejak saat itu Anda hanya akan melihat iklan yang tidak dipersonalisasi. Aplikasi ini tidak mengirim data sensitif kepada siapa pun: foto, video, dan data wajah Anda tetap di ponsel Anda. Untuk iklan, SDK Google memakai ID perangkat dan perkiraan lokasi (tingkat kota). Untuk permintaan lain apa pun tentang data Anda, kirimkan email kepada kami di <a href="mailto:demual@gmail.com">demual@gmail.com</a>.</p>
+<h2>14. Perubahan</h2>
+<p>Jika kebijakan ini berubah, kami akan menyebutkannya di catatan versi aplikasi di Google Play dan mengubah tanggal di atas. Jika fitur baru memerlukan data yang saat ini tidak digunakan (misalnya menyimpan lokasi di foto), kami akan menjelaskannya kepada Anda di aplikasi sebelum mengaktifkannya dan menambahkannya di sini.</p>
+<h2>15. Pengendali data dan kontak</h2>
+<p>JR Soft (Javier Román Sáez) — <a href="mailto:demual@gmail.com">demual@gmail.com</a></p>
+</main>
+</body>
+</html>
